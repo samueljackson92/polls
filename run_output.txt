@@ -1,0 +1,74 @@
+Reading polling data from poll.html...
+Found year heading: 2026
+Found year heading: 2025
+Found year heading: 2024
+Total year headings found: 3
+Year headings: [2026, 2025, 2024]
+Found Seat projections section - will stop there
+
+Processing year 2026...
+  Will stop at next year: 2025
+  Found table #1 for year 2026
+  Reached next year section
+  Total tables found for 2026: 1
+
+Processing year 2025...
+  Will stop at next year: 2024
+  Reached end of document
+  Total tables found for 2025: 0
+
+Processing year 2024...
+  Found table #1 for year 2024
+  Reached major section: Seat_projections
+  Total tables found for 2024: 1
+
+Found 2 total tables in National poll results section
+
+Processing table 1 (year 2026)...
+  Added 93 data rows from this table
+
+Processing table 2 (year 2024)...
+  Added 54 data rows from this table
+Extracted 147 polling records
+
+DataFrame Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 147 entries, 0 to 146
+Data columns (total 16 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   Dates              147 non-null    str    
+ 1   Pollster           147 non-null    str    
+ 2   Client             144 non-null    str    
+ 3   Area               145 non-null    str    
+ 4   Samplesize         144 non-null    float64
+ 5   Labour             145 non-null    float64
+ 6   Conservative       145 non-null    float64
+ 7   Reform             145 non-null    float64
+ 8   Liberal_Democrats  145 non-null    float64
+ 9   Green              145 non-null    float64
+ 10  SNP                144 non-null    float64
+ 11  Plaid_Cymru        119 non-null    float64
+ 12  Others             144 non-null    float64
+ 13  Lead               141 non-null    float64
+ 14  Year               147 non-null    int64  
+ 15  Date               146 non-null    str    
+dtypes: float64(10), int64(1), str(5)
+memory usage: 24.2 KB
+None
+
+First few rows:
+       Dates        Pollster        Client Area  ...  Others  Lead  Year        Date
+0  29–30 Apr    Find Out Now           N/A   GB  ...     7.0   4.0  2026  2026-04-30
+1     27 Apr          Techne           N/A   UK  ...     7.0   8.0  2026  2026-04-27
+2  26–27 Apr          YouGov           N/A   GB  ...     6.0   7.0  2026  2026-04-27
+3  24–27 Apr  More in Common           N/A   GB  ...     3.0   6.0  2026  2026-04-27
+4  22–24 Apr         Opinium  The Observer   GB  ...     5.0   9.0  2026  2026-04-24
+
+[5 rows x 16 columns]
+
+Column names:
+['Dates', 'Pollster', 'Client', 'Area', 'Samplesize', 'Labour', 'Conservative', 'Reform', 'Liberal_Democrats', 'Green', 'SNP', 'Plaid_Cymru', 'Others', 'Lead', 'Year', 'Date']
+
+Saving to uk_polling_data.parquet...
+Successfully saved 147 polling records to uk_polling_data.parquet
