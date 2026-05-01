@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Polling Aggregator</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗳️</text></svg>">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif', serif;
+            background: #f7f7f7;
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #222;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 4px;
+            padding: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border: 1px solid #e0e0e0;
+        }
+
+        .card h2 {
+            color: #222;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            border-bottom: 2px solid #222;
+            padding-bottom: 10px;
+        }
+
+        #main-chart {
+            width: 100%;
+            height: 600px;
+        }
+
+        #stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: #222;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        .stat-card h3 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .legend-item:hover {
+            background: #f5f5f5;
+            border-color: #333;
+        }
+
+        .legend-item.inactive {
+            opacity: 0.3;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .legend-text {
+            font-size: 0.9em;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: #222;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 3px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            font-size: 0.85em;
+            max-width: 250px;
+            z-index: 1000;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            border: 1px solid #333;
+        }
+
+        .tooltip.visible {
+            opacity: 1;
+        }
+
+        .event-line {
+            stroke: #666;
+            stroke-width: 2;
+            stroke-dasharray: 5,5;
+            opacity: 0.6;
+        }
+
+        .event-label {
+            font-size: 11px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            fill: #444;
+            font-weight: 600;
+        }
+
+        .event-label-bg {
+            fill: white;
+            opacity: 0.9;
+        }
+
+        .axis-label {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .grid line {
+            stroke: #e0e0e0;
+            stroke-opacity: 0.7;
+            shape-rendering: crispEdges;
+        }
+
+        .grid path {
+            stroke-width: 0;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .polls-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        .polls-table th {
+            background: #f5f5f5;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #222;
+            position: sticky;
+            top: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .polls-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .polls-table tr:hover {
+            background: #f9f9f9;
+        }
+
+        .polls-table-container {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .party-cell {
+            font-weight: 500;
+        }
+
+        .poll-count {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .about-section p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .about-section ul {
+            line-height: 1.7;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .about-section li {
+            margin-bottom: 8px;
+        }
+
+        .about-section strong {
+            font-weight: 700;
+            color: #222;
+        }
+
+        .about-section a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px solid #0066cc;
+        }
+
+        .about-section a:hover {
+            color: #004499;
+            border-bottom-color: #004499;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UK Polling Aggregator 🗳️</h1>
+        <p class="subtitle">Bayesian statistical analysis of UK opinion polling trends</p>
+        
+        <div class="dashboard">
+            <div class="card">
+                <h2>Current Polling Trends</h2>
+                <div id="main-chart"></div>
+                <div class="legend" id="legend"></div>
+            </div>
+
+            <div class="card">
+                <h2>Current Standings</h2>
+                <div id="stats-grid"></div>
+            </div>
+
+            <div class="card">
+                <h2>Polls Used</h2>
+                <div class="poll-count" id="poll-count"></div>
+                <div class="polls-table-container">
+                    <table class="polls-table" id="polls-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Pollster</th>
+                                <th>Client</th>
+                                <th>Sample</th>
+                                <th>CON</th>
+                                <th>LAB</th>
+                                <th>REF</th>
+                                <th>LD</th>
+                                <th>GRN</th>
+                                <th>PC</th>
+                                <th>SNP</th>
+                                <th>OTH</th>
+                            </tr>
+                        </thead>
+                        <tbody id="polls-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>About This Dashboard</h2>
+                <div class="about-section">
+                    <p>This dashboard provides a statistical aggregation and visualization of UK opinion polling data for the next general election. Rather than simply averaging polls, or using a <a href="https://en.wikipedia.org/wiki/Local_regression" target="_blank">LOESS model</a>, it uses a Bayesian model to estimate polling trends while accounting for uncertainty.</p>
+                    
+                    <p><strong>Methodology:</strong></p>
+                    <ul>
+                        <li><strong>Model:</strong> Bayesian B-spline regression with separate smooth trends for each party</li>
+                        <li><strong>Uncertainty quantification:</strong> 95% highest density intervals (HDI) shown as shaded regions</li>
+                        <li><strong>Sampling:</strong> Posterior distributions estimated using MCMC (via PyMC with NUTS sampler)</li>
+                        <li><strong>Smoothing:</strong> Adaptive splines with one knot approximately every month</li>
+                    </ul>
+                    
+                    <p><strong>Data Source:</strong> All polling data is sourced from the <a href="https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election" target="_blank">Wikipedia page on current UK opinion polling</a>, which aggregates polls from various organizations.</p>
+                    
+                    <p><strong>Interpreting the Charts:</strong></p>
+                    <ul>
+                        <li><strong>Solid lines:</strong> Model's best estimate of party support over time</li>
+                        <li><strong>Shaded areas:</strong> 95% credible intervals - there's a 95% probability the true value falls within this range</li>
+                        <li><strong>Scattered points:</strong> Raw polling data from individual surveys</li>
+                        <li><strong>Interactive legend:</strong> Click on party names to show/hide them from the chart</li>
+                    </ul>
+                    
+
+                    <p><strong>Limitations:</strong></p>
+                    <ul>
+                        <li>The model treats all polls as equally reliable, without weighting based on bias or pollster reputation.</li>
+                        <li>The model treats each party independently, without accounting for potential correlations or interactions between parties. Vote shares likely therefore do not sum to 100%.</li>
+                    </ul>
+                    <p> In future iterations, I may explore more complex models that address these limitations, such as hierarchical models that account for pollster bias, or multinomial to model vote shares more accurately.</p>
+
+                    <p><strong>Note:</strong> This is a statistical model and should not be interpreted as a prediction or forecast. Polling can be volatile and may not accurately reflect final election results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        const PARTY_COLORS = {
+            conservative: "#0087DC",
+            labour: "#E4003B",
+            reform: "#12B6CF",
+            liberal_democrats: "#FAA61A",
+            green: "#02A95B",
+            plaid_cymru: "#005B54",
+            snp: "#FFF95D",
+            others: "#999999"
+        };
+
+        const PARTY_NAMES = {
+            conservative: "Conservative",
+            labour: "Labour",
+            reform: "Reform UK",
+            liberal_democrats: "Liberal Democrats",
+            green: "Green",
+            plaid_cymru: "Plaid Cymru",
+            snp: "SNP",
+            others: "Others"
+        };
+
+        let activeParties = new Set(Object.keys(PARTY_COLORS));
+
+        // Load all JSON files
+        Promise.all([
+            d3.json('polling_data.json'),
+            d3.json('polling_results.json'),
+            d3.json('events.json')
+        ]).then(([pollingData, results, events]) => {
+            renderDashboard(pollingData, results, events);
+        }).catch(error => {
+            console.error('Error loading data:', error);
+            document.getElementById('main-chart').innerHTML = 
+                '<div class="loading">Error loading data. Please ensure polling_data.json, polling_results.json, and events.json are in the same directory.</div>';
+        });
+
+        function renderDashboard(pollingData, results, events) {
+            // Parse dates
+            pollingData.forEach(d => {
+                d.date = new Date(d.date);
+            });
+
+            // Parse event dates
+            events.forEach(e => {
+                e.date = new Date(e.date);
+            });
+
+            // Sort by date
+            pollingData.sort((a, b) => a.date - b.date);
+
+            // Render main chart
+            renderMainChart(pollingData, results, events);
+
+            // Render stats
+            renderStats(results, pollingData);
+
+            // Render polls table
+            renderPolls(pollingData);
+
+            // Render legend
+            renderLegend();
+        }
+
+        function renderMainChart(data, results, events) {
+            const margin = {top: 20, right: 30, bottom: 60, left: 60};
+            const width = document.getElementById('main-chart').clientWidth - margin.left - margin.right;
+            const height = 600 - margin.top - margin.bottom;
+
+            // Clear existing chart
+            d3.select('#main-chart').selectAll('*').remove();
+
+            const svg = d3.select('#main-chart')
+                .append('svg')
+                .attr('width', width + margin.left + margin.right)
+                .attr('height', height + margin.top + margin.bottom)
+                .append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+
+            // Scales
+            const xScale = d3.scaleTime()
+                .domain(d3.extent(data, d => d.date))
+                .range([0, width]);
+
+            const yScale = d3.scaleLinear()
+                .domain([0, 50])
+                .range([height, 0]);
+
+            // Grid
+            svg.append('g')
+                .attr('class', 'grid')
+                .call(d3.axisLeft(yScale)
+                    .tickSize(-width)
+                    .tickFormat(''));
+
+            // Axes
+            const xAxis = d3.axisBottom(xScale)
+                .ticks(10)
+                .tickFormat(d3.timeFormat('%b %Y'));
+
+            svg.append('g')
+                .attr('transform', `translate(0,${height})`)
+                .call(xAxis)
+                .selectAll('text')
+                .attr('transform', 'rotate(-45)')
+                .style('text-anchor', 'end');
+
+            svg.append('g')
+                .call(d3.axisLeft(yScale));
+
+            // Axis labels
+            svg.append('text')
+                .attr('class', 'axis-label')
+                .attr('text-anchor', 'middle')
+                .attr('x', width / 2)
+                .attr('y', height + 50)
+                .text('Date');
+
+            svg.append('text')
+                .attr('class', 'axis-label')
+                .attr('text-anchor', 'middle')
+                .attr('transform', 'rotate(-90)')
+                .attr('x', -height / 2)
+                .attr('y', -45)
+                .text('Support (%)');
+
+            // Tooltip
+            const tooltip = d3.select('#tooltip');
+
+            // Draw for each party
+            Object.keys(PARTY_COLORS).forEach(party => {
+                if (!results[party]) return;
+
+                const partyData = data.map((d, i) => ({
+                    date: d.date,
+                    actual: d[party],
+                    mean: results[party].mean[i],
+                    hdi_lower: results[party].hdi_lower[i],
+                    hdi_upper: results[party].hdi_upper[i],
+                    pollster: d.pollster,
+                    client: d.client,
+                    sample_size: d.sample_size
+                }));
+
+                // HDI area
+                const area = d3.area()
+                    .x(d => xScale(d.date))
+                    .y0(d => yScale(d.hdi_lower))
+                    .y1(d => yScale(d.hdi_upper))
+                    .curve(d3.curveMonotoneX);
+
+                svg.append('path')
+                    .datum(partyData)
+                    .attr('class', `area-${party}`)
+                    .attr('fill', PARTY_COLORS[party])
+                    .attr('opacity', 0.2)
+                    .attr('d', area);
+
+                // Mean line
+                const line = d3.line()
+                    .x(d => xScale(d.date))
+                    .y(d => yScale(d.mean))
+                    .curve(d3.curveMonotoneX);
+
+                svg.append('path')
+                    .datum(partyData)
+                    .attr('class', `line-${party}`)
+                    .attr('fill', 'none')
+                    .attr('stroke', PARTY_COLORS[party])
+                    .attr('stroke-width', 3)
+                    .attr('d', line);
+
+                // Actual data points
+                svg.selectAll(`.dot-${party}`)
+                    .data(partyData.filter(d => d.actual != null))
+                    .enter()
+                    .append('circle')
+                    .attr('class', `dot-${party}`)
+                    .attr('cx', d => xScale(d.date))
+                    .attr('cy', d => yScale(d.actual))
+                    .attr('r', 3)
+                    .attr('fill', PARTY_COLORS[party])
+                    .attr('opacity', 0.6)
+                    .on('mouseover', function(event, d) {
+                        d3.select(this)
+                            .transition()
+                            .duration(200)
+                            .attr('r', 6);
+                        
+                        let tooltipHtml = `
+                            <strong>${PARTY_NAMES[party]}</strong><br>
+                            Date: ${d3.timeFormat('%b %d, %Y')(d.date)}<br>`;
+                        
+                        if (d.pollster) {
+                            tooltipHtml += `Pollster: ${d.pollster}<br>`;
+                        }
+                        if (d.client && d.client !== 'N/A') {
+                            tooltipHtml += `Client: ${d.client}<br>`;
+                        }
+                        if (d.sample_size) {
+                            tooltipHtml += `Sample: ${d.sample_size.toLocaleString()}<br>`;
+                        }
+                        
+                        tooltipHtml += `Actual: ${d.actual?.toFixed(1)}%<br>
+                            Model: ${d.mean.toFixed(1)}%<br>
+                            95% HDI: ${d.hdi_lower.toFixed(1)}% - ${d.hdi_upper.toFixed(1)}%`;
+                        
+                        tooltip
+                            .html(tooltipHtml)
+                            .classed('visible', true)
+                            .style('left', (event.pageX + 10) + 'px')
+                            .style('top', (event.pageY - 10) + 'px');
+                    })
+                    .on('mouseout', function() {
+                        d3.select(this)
+                            .transition()
+                            .duration(200)
+                            .attr('r', 3);
+                        
+                        tooltip.classed('visible', false);
+                    });
+            });
+
+            // Add event annotations
+            events.forEach(event => {
+                const eventDate = event.date;
+                const x = xScale(eventDate);
+                
+                // Draw vertical line
+                const eventLine = svg.append('line')
+                    .attr('class', 'event-line')
+                    .attr('x1', x)
+                    .attr('x2', x)
+                    .attr('y1', 0)
+                    .attr('y2', height);
+                
+                // Add wider invisible rectangle for easier hovering
+                svg.append('rect')
+                    .attr('x', x - 15)
+                    .attr('y', 0)
+                    .attr('width', 30)
+                    .attr('height', height)
+                    .attr('fill', 'transparent')
+                    .style('cursor', 'pointer')
+                    .on('mouseover', function(e) {
+                        eventLine
+                            .transition()
+                            .duration(200)
+                            .attr('opacity', 1)
+                            .attr('stroke-width', 3);
+                        
+                        tooltip
+                            .html(`
+                                <strong>Event</strong><br>
+                                ${event.event}<br>
+                                Date: ${d3.timeFormat('%b %d, %Y')(eventDate)}
+                            `)
+                            .classed('visible', true)
+                            .style('left', (e.pageX + 10) + 'px')
+                            .style('top', (e.pageY - 10) + 'px');
+                    })
+                    .on('mouseout', function() {
+                        eventLine
+                            .transition()
+                            .duration(200)
+                            .attr('opacity', 0.6)
+                            .attr('stroke-width', 2);
+                        
+                        tooltip.classed('visible', false);
+                    });
+            });
+
+            // Update visibility based on active parties
+            updateChartVisibility();
+        }
+
+        function renderStats(results, data) {
+            const statsContainer = d3.select('#stats-grid');
+            statsContainer.selectAll('*').remove();
+
+            // Create array of parties with their latest values and sort by vote share
+            const partiesWithValues = Object.keys(PARTY_COLORS)
+                .filter(party => results[party])
+                .map(party => ({
+                    party: party,
+                    latestMean: results[party].mean[results[party].mean.length - 1]
+                }))
+                .sort((a, b) => b.latestMean - a.latestMean); // Sort descending by vote share
+
+            partiesWithValues.forEach(({party, latestMean}) => {
+                const statCard = statsContainer.append('div')
+                    .attr('class', 'stat-card')
+                    .style('background', PARTY_COLORS[party]);
+
+                statCard.append('h3')
+                    .text(PARTY_NAMES[party]);
+
+                statCard.append('div')
+                    .attr('class', 'value')
+                    .text(latestMean.toFixed(1) + '%');
+
+                statCard.append('div')
+                    .style('font-size', '0.8em')
+                    .style('margin-top', '5px')
+                    .style('opacity', '0.9')
+                    .text('Latest Estimate');
+            });
+        }
+
+        function renderPolls(data) {
+            const pollCount = d3.select('#poll-count');
+            pollCount.text(`Total polls: ${data.length}`);
+
+            const tbody = d3.select('#polls-tbody');
+            tbody.selectAll('*').remove();
+
+            // Sort by date descending (most recent first)
+            const sortedData = [...data].sort((a, b) => b.date - a.date);
+
+            sortedData.forEach(poll => {
+                const row = tbody.append('tr');
+                
+                row.append('td')
+                    .style('font-weight', '600')
+                    .text(d3.timeFormat('%b %d, %Y')(poll.date));
+                
+                row.append('td')
+                    .text(poll.pollster || '-');
+                
+                row.append('td')
+                    .text(poll.client && poll.client !== 'N/A' ? poll.client : '-');
+                
+                row.append('td')
+                    .text(poll.sample_size ? poll.sample_size.toLocaleString() : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.conservative)
+                    .text(poll.conservative != null ? poll.conservative.toFixed(1) : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.labour)
+                    .text(poll.labour != null ? poll.labour.toFixed(1) : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.reform)
+                    .text(poll.reform != null ? poll.reform.toFixed(1) : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.liberal_democrats)
+                    .text(poll.liberal_democrats != null ? poll.liberal_democrats.toFixed(1) : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.green)
+                    .text(poll.green != null ? poll.green.toFixed(1) : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.plaid_cymru)
+                    .text(poll.plaid_cymru != null ? poll.plaid_cymru.toFixed(1) : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.snp)
+                    .text(poll.snp != null ? poll.snp.toFixed(1) : '-');
+                
+                row.append('td')
+                    .attr('class', 'party-cell')
+                    .style('color', PARTY_COLORS.others)
+                    .text(poll.others != null ? poll.others.toFixed(1) : '-');
+            });
+        }
+
+        function renderLegend() {
+            const legend = d3.select('#legend');
+            legend.selectAll('*').remove();
+
+            Object.keys(PARTY_COLORS).forEach(party => {
+                const item = legend.append('div')
+                    .attr('class', 'legend-item')
+                    .on('click', () => toggleParty(party));
+
+                item.append('div')
+                    .attr('class', 'legend-color')
+                    .style('background-color', PARTY_COLORS[party]);
+
+                item.append('span')
+                    .attr('class', 'legend-text')
+                    .text(PARTY_NAMES[party]);
+            });
+        }
+
+        function toggleParty(party) {
+            if (activeParties.has(party)) {
+                activeParties.delete(party);
+            } else {
+                activeParties.add(party);
+            }
+            updateChartVisibility();
+            updateLegend();
+        }
+
+        function updateChartVisibility() {
+            Object.keys(PARTY_COLORS).forEach(party => {
+                const opacity = activeParties.has(party) ? 1 : 0.1;
+                d3.selectAll(`.area-${party}`).transition().duration(300).attr('opacity', activeParties.has(party) ? 0.2 : 0.02);
+                d3.selectAll(`.line-${party}`).transition().duration(300).attr('opacity', opacity);
+                d3.selectAll(`.dot-${party}`).transition().duration(300).attr('opacity', activeParties.has(party) ? 0.6 : 0.1);
+            });
+        }
+
+        function updateLegend() {
+            d3.selectAll('.legend-item')
+                .classed('inactive', function() {
+                    const party = Object.keys(PARTY_COLORS)[d3.selectAll('.legend-item').nodes().indexOf(this)];
+                    return !activeParties.has(party);
+                });
+        }
+
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                Promise.all([
+                    d3.json('polling_data.json'),
+                    d3.json('polling_results.json'),
+                    d3.json('events.json')
+                ]).then(([pollingData, results, events]) => {
+                    renderDashboard(pollingData, results, events);
+                });
+            }, 250);
+        });
+    </script>
+</body>
+</html>
