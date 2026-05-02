@@ -331,6 +331,51 @@
                 display: none;
             }
         }
+
+        .toc {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .toc a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .toc a:hover {
+            background: #222;
+            color: white;
+            border-color: #222;
+            transform: translateY(-2px);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .toc {
+                gap: 8px;
+            }
+            .toc a {
+                padding: 8px 15px;
+                font-size: 0.85em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -344,19 +389,26 @@
         <h1>UK Polling Aggregator 🗳️</h1>
         <p class="subtitle">Bayesian statistical analysis of UK opinion polling trends</p>
         
+        <nav class="toc">
+            <a href="#trends">📈 Polling Trends</a>
+            <a href="#standings">📊 Current Standings</a>
+            <a href="#polls">📋 Polls Used</a>
+            <a href="#about">ℹ️ About</a>
+        </nav>
+        
         <div class="dashboard">
-            <div class="card">
+            <div class="card" id="trends">
                 <h2>Current Polling Trends</h2>
                 <div id="main-chart"></div>
                 <div class="legend" id="legend"></div>
             </div>
 
-            <div class="card">
+            <div class="card" id="standings">
                 <h2>Current Standings</h2>
                 <div id="stats-grid"></div>
             </div>
 
-            <div class="card">
+            <div class="card" id="polls">
                 <h2>Polls Used</h2>
                 <div class="poll-count" id="poll-count"></div>
                 <div class="polls-table-container">
@@ -383,7 +435,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="about">
                 <h2>About This Dashboard</h2>
                 <div class="about-section">
                     <p>This dashboard provides a statistical aggregation and visualization of UK opinion polling data for the next general election. Rather than simply averaging polls, or using a <a href="https://en.wikipedia.org/wiki/Local_regression" target="_blank">LOESS model</a>, it uses a Bayesian model to estimate polling trends while accounting for uncertainty.</p>
