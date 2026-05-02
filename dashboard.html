@@ -380,7 +380,7 @@
             liberal_democrats: "#FAA61A",
             green: "#02A95B",
             plaid_cymru: "#005B54",
-            snp: "#FFF95D",
+            snp: "#F0C800",
             others: "#999999"
         };
 
@@ -679,6 +679,18 @@
                     .style('margin-top', '5px')
                     .style('opacity', '0.9')
                     .text('Latest Estimate');
+
+                // Calculate mean trend uncertainty (average HDI width over all time points)
+                const hdiWidths = results[party].hdi_upper.map((upper, i) => 
+                    upper - results[party].hdi_lower[i]
+                );
+                const meanUncertainty = hdiWidths.reduce((sum, width) => sum + width, 0) / hdiWidths.length;
+
+                statCard.append('div')
+                    .style('font-size', '0.75em')
+                    .style('margin-top', '3px')
+                    .style('opacity', '0.8')
+                    .text(`Avg. uncertainty: ±${(meanUncertainty / 2).toFixed(1)}%`);
             });
         }
 
