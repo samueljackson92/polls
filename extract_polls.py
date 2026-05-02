@@ -391,7 +391,7 @@ def extract_polling_tables(html_file):
 
 def main():
     """Main execution function."""
-    html_file = "poll.html"
+    html_file = "data/raw/poll.html"
     output_file = "uk_polling_data.parquet"
 
     print(f"Reading polling data from {html_file}...")

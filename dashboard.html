@@ -399,9 +399,9 @@
 
         // Load all JSON files
         Promise.all([
-            d3.json('polling_data.json'),
-            d3.json('polling_results.json'),
-            d3.json('events.json')
+            d3.json('data/processed/polling_data.json'),
+            d3.json('data/processed/polling_results.json'),
+            d3.json('data/processed/events.json')
         ]).then(([pollingData, results, events]) => {
             renderDashboard(pollingData, results, events);
         }).catch(error => {

@@ -98,7 +98,7 @@ def no_pooling_model(df: pd.DataFrame):
 
 
 def main():
-    df = pd.read_parquet("uk_polling_data.parquet")
+    df = pd.read_parquet("data/processed/uk_polling_data.parquet")
     df = df.dropna(subset=["date"])
     df = df.loc[~df.sample_size.isna()]
 
@@ -126,16 +126,16 @@ def main():
     # Write dataframe to JSON file
     df_json = df.copy()
     df_json["date"] = df_json["date"].astype(str)  # Convert dates to strings for JSON
-    df_json.to_json("polling_data.json", orient="records", indent=2)
+    df_json.to_json("data/processed/polling_data.json", orient="records", indent=2)
 
     # Write results to JSON file
-    with open("polling_results.json", "w") as f:
+    with open("data/processed/polling_results.json", "w") as f:
         json.dump(results_json, f, indent=2)
 
     plt.xlabel("Date")
     plt.ylabel("Support (%)")
     plt.legend()
-    plt.savefig("polling_trends.png")
+    plt.savefig("data/processed/polling_trends.png")
 
 
 if __name__ == "__main__":
