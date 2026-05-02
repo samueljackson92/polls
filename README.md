@@ -34,7 +34,7 @@ Rather than simply averaging polls or using traditional smoothing methods (like 
 polls/
 ├── extract_polls.py        # Web scraper for Wikipedia polling data
 ├── main.py                 # Bayesian model fitting and result generation
-├── dashboard.html          # Interactive visualization dashboard
+├── index.html              # Interactive visualization dashboard
 ├── data/
 │   ├── raw/               # Raw scraped HTML
 │   └── processed/         # Processed parquet/JSON files
@@ -78,7 +78,7 @@ This:
 
 ### 3. View the dashboard
 
-Open `dashboard.html` in a web browser. The dashboard reads the JSON files and renders an interactive visualization.
+Open `index.html` in a web browser. The dashboard reads the JSON files and renders an interactive visualization.
 
 ## Data Source
 
