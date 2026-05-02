@@ -7668,6 +7668,24 @@
     "date":"2026-04-24"
   },
   {
+    "dates":"22\u201324 Apr",
+    "pollster":"Techne",
+    "client":"N\/A",
+    "area":"UK",
+    "sample_size":1645.0,
+    "labour":17.0,
+    "conservative":18.0,
+    "reform":26.0,
+    "liberal_democrats":13.0,
+    "green":16.0,
+    "snp":3.0,
+    "plaid_cymru":null,
+    "others":7.0,
+    "lead":8.0,
+    "year":2026,
+    "date":"2026-04-24"
+  },
+  {
     "dates":"24\u201327 Apr",
     "pollster":"More in Common",
     "client":"N\/A",
@@ -7704,25 +7722,7 @@
     "date":"2026-04-27"
   },
   {
-    "dates":"27 Apr",
-    "pollster":"Techne",
-    "client":"N\/A",
-    "area":"UK",
-    "sample_size":1639.0,
-    "labour":17.0,
-    "conservative":18.0,
-    "reform":26.0,
-    "liberal_democrats":13.0,
-    "green":16.0,
-    "snp":3.0,
-    "plaid_cymru":null,
-    "others":7.0,
-    "lead":8.0,
-    "year":2026,
-    "date":"2026-04-27"
-  },
-  {
-    "dates":"29\u201330 Apr",
+    "dates":"29 Apr",
     "pollster":"Find Out Now",
     "client":"N\/A",
     "area":"GB",
@@ -7737,6 +7737,6 @@
     "others":7.0,
     "lead":4.0,
     "year":2026,
-    "date":"2026-04-30"
+    "date":"2026-04-29"
   }
 ]

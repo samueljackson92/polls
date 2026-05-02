@@ -1,56 +1,106 @@
-# UK Polling Data Scraper
+# UK Polling Aggregator 🗳️
 
-This project downloads national polling results for the next United Kingdom general election from Wikipedia and saves them as a parquet file.
+A Bayesian statistical model for aggregating and visualizing UK opinion polling data. This project scrapes polling data from Wikipedia, fits a Bayesian B-spline regression model to estimate smooth trends for each political party, and presents the results in an interactive web dashboard.
+
+## Overview
+
+Rather than simply averaging polls or using traditional smoothing methods (like LOESS), this project uses a Bayesian approach to estimate polling trends while accounting for uncertainty. Each party's support is modeled independently using B-spline basis functions, with posterior distributions estimated via Markov Chain Monte Carlo (MCMC) sampling.
+
+## Methodology
+
+### Statistical Model
+
+- **Model type:** Bayesian B-spline regression with no pooling across parties
+- **Spline knots:** Approximately one knot per month (adaptive to data)
+- **Likelihood:** Normal distribution with party-specific variance
+- **Inference:** MCMC sampling using PyMC with the NUTS sampler (via nutpie)
+
+### Key Advantages
+
+- **Proper uncertainty quantification:** Unlike simple averages, the model provides credible intervals that reflect both sampling uncertainty and model uncertainty
+- **Smooth trends:** B-splines provide flexible, smooth curves that adapt to the data
+- **Separate party modeling:** Each party gets its own independent trend
+
+### Known Limitations
+
+- All polls are treated as equally reliable (no weighting for pollster house effects or quality)
+- Parties are modeled independently without accounting for correlations
+- Vote shares may not sum to 100% across parties
+- This is a descriptive model, not a predictive/forecasting model
+
+## Project Structure
+
+```
+polls/
+├── extract_polls.py        # Web scraper for Wikipedia polling data
+├── main.py                 # Bayesian model fitting and result generation
+├── dashboard.html          # Interactive visualization dashboard
+├── data/
+│   ├── raw/               # Raw scraped HTML
+│   └── processed/         # Processed parquet/JSON files
+├── pyproject.toml         # Project dependencies
+└── README.md              # This file
+```
 
 ## Installation
 
-Install the package and its dependencies:
+This project uses Python 3.12+ and uv for dependency management.
 
 ```bash
-pip install -e .
+# Clone the repository
+git clone <repository-url>
+cd polls
+
+# Install dependencies with uv
+uv sync
 ```
 
 ## Usage
 
-Run the script to download the latest polling data:
+### 1. Scrape polling data
 
 ```bash
-python download_uk_polls.py
+python extract_polls.py
 ```
 
-This will:
-1. Fetch polling data from the Wikipedia page
-2. Parse and clean the polling tables
-3. Save the results to `uk_polling_data.parquet`
+This scrapes the latest polling data from Wikipedia and saves it as `data/processed/uk_polling_data.parquet`.
 
-## Output
+### 2. Fit the Bayesian model
 
-The script creates a parquet file containing:
+```bash
+python main.py
+```
 
-**Metadata columns:**
-- `poll_date` - Date or date range when poll was conducted
-- `pollster` - Polling organization name (e.g., YouGov, Ipsos, Opinium)
-- `client` - Client/commissioner of the poll
-- `area` - Geographic area (GB or UK)
-- `sample_size` - Number of respondents
-- `year` - Year the poll was conducted (extracted from Wikipedia table headings)
+This:
+- Loads the polling data
+- Fits the Bayesian B-spline model
+- Exports results to `data/processed/polling_results.json` and `data/processed/polling_data.json`
 
-**Party support columns (percentages):**
-- `con_pct` - Conservative Party
-- `lab_pct` - Labour Party
-- `lib_dem_pct` - Liberal Democrats
-- `reform_pct` - Reform UK
-- `green_pct` - Green Party
-- `snp_pct` - Scottish National Party
-- `plaid_pct` - Plaid Cymru
-- `others_pct` - Other parties
+### 3. View the dashboard
 
-**Additional columns:**
-- `lead` - Lead margin between top parties
-- `extracted_at` - Timestamp when data was downloaded
-
-All column names use snake_case for consistency in data science workflows.
+Open `dashboard.html` in a web browser. The dashboard reads the JSON files and renders an interactive visualization.
 
 ## Data Source
 
-Data is scraped from: https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election
+All polling data is sourced from: https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election
+
+Wikipedia aggregates polls from various organizations including YouGov, Ipsos MORI, Savanta, Redfield & Wilton, and others.
+
+## Future Improvements
+
+Potential enhancements for future iterations:
+
+- **Hierarchical modeling** to account for pollster house effects
+- **Multinomial regression** to ensure vote shares sum to 100%
+- **Predictive modeling** with proper forecasting methodology
+- **Poll quality weighting** based on sample size, methodology, and pollster track record
+- **Temporal correlation modeling** between parties
+- **Automated updates** with scheduled scraping and model refitting
+
+## License
+
+This project is for educational and research purposes. Polling data is sourced from Wikipedia and belongs to the respective polling organizations.
+
+## Disclaimer
+
+This is a statistical model for analyzing polling trends and should **not** be interpreted as a prediction or forecast of election results. Polls can be volatile and may not accurately reflect final election outcomes.

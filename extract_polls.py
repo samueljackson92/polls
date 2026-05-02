@@ -7,6 +7,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import re
 from datetime import datetime, timedelta
+import requests
+from pathlib import Path
 
 
 def parse_poll_date(date_str, year):
@@ -389,12 +391,44 @@ def extract_polling_tables(html_file):
     return df
 
 
+def download_wikipedia_page(url, output_file):
+    """
+    Download Wikipedia page and save to file.
+
+    Args:
+        url: Wikipedia URL to download
+        output_file: Path to save HTML file
+    """
+    print(f"Downloading page from {url}...")
+
+    # Make request with user agent to avoid blocking
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    }
+
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()  # Raise error if request failed
+
+    # Create directory if it doesn't exist
+    Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+
+    # Save HTML to file
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(response.text)
+
+    print(f"Successfully saved HTML to {output_file}")
+
+
 def main():
     """Main execution function."""
+    wikipedia_url = "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election"
     html_file = "data/raw/poll.html"
-    output_file = "uk_polling_data.parquet"
+    output_file = "data/processed/uk_polling_data.parquet"
 
-    print(f"Reading polling data from {html_file}...")
+    # Download latest Wikipedia page
+    download_wikipedia_page(wikipedia_url, html_file)
+
+    print(f"\nReading polling data from {html_file}...")
     df = extract_polling_tables(html_file)
 
     # Display info about the dataframe
@@ -406,6 +440,9 @@ def main():
 
     print("\nColumn names:")
     print(df.columns.tolist())
+
+    # Create directory if it doesn't exist
+    Path(output_file).parent.mkdir(parents=True, exist_ok=True)
 
     # Save to parquet
     print(f"\nSaving to {output_file}...")
