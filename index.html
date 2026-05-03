@@ -162,6 +162,7 @@
             z-index: 1000;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             border: 1px solid #333;
+            word-wrap: break-word;
         }
 
         .tooltip.visible {
@@ -215,6 +216,7 @@
             border-collapse: collapse;
             margin-top: 15px;
             font-size: 0.9em;
+            min-width: 800px;
         }
 
         .polls-table th {
@@ -240,6 +242,7 @@
         .polls-table-container {
             max-height: 400px;
             overflow-y: auto;
+            overflow-x: auto;
             border: 1px solid #ddd;
             border-radius: 3px;
         }
@@ -374,6 +377,191 @@
             .toc a {
                 padding: 8px 15px;
                 font-size: 0.85em;
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 8px;
+            }
+
+            .subtitle {
+                font-size: 1em;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+
+            .card {
+                padding: 15px;
+                border-radius: 3px;
+            }
+
+            .card h2 {
+                font-size: 1.3em;
+                margin-bottom: 15px;
+                padding-bottom: 8px;
+            }
+
+            #main-chart {
+                height: 400px;
+            }
+
+            #stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+            }
+
+            .stat-card {
+                padding: 15px;
+            }
+
+            .stat-card h3 {
+                font-size: 0.8em;
+            }
+
+            .stat-card .value {
+                font-size: 1.5em;
+            }
+
+            .polls-table {
+                font-size: 0.8em;
+            }
+
+            .polls-table th,
+            .polls-table td {
+                padding: 8px 4px;
+            }
+
+            .polls-table-container {
+                max-height: 300px;
+            }
+
+            .about-section p,
+            .about-section ul {
+                font-size: 0.95em;
+            }
+
+            .legend {
+                gap: 10px;
+            }
+
+            .legend-item {
+                padding: 6px 12px;
+            }
+
+            .legend-text {
+                font-size: 0.85em;
+            }
+
+            .legend-color {
+                width: 16px;
+                height: 16px;
+            }
+
+            .tooltip {
+                font-size: 0.75em;
+                max-width: 200px;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .subtitle {
+                font-size: 0.9em;
+            }
+
+            .card {
+                padding: 12px;
+            }
+
+            .card h2 {
+                font-size: 1.1em;
+            }
+
+            #main-chart {
+                height: 300px;
+            }
+
+            #stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .stat-card {
+                padding: 12px;
+            }
+
+            .stat-card h3 {
+                font-size: 0.7em;
+            }
+
+            .stat-card .value {
+                font-size: 1.3em;
+            }
+
+            .polls-table {
+                font-size: 0.7em;
+            }
+
+            .polls-table th,
+            .polls-table td {
+                padding: 6px 2px;
+            }
+
+            .about-section p,
+            .about-section ul {
+                font-size: 0.9em;
+                line-height: 1.6;
+            }
+
+            .legend {
+                gap: 8px;
+            }
+
+            .legend-item {
+                padding: 5px 10px;
+            }
+
+            .legend-text {
+                font-size: 0.8em;
+            }
+
+            .github-link {
+                top: 10px;
+                right: 10px;
+                padding: 6px 10px;
+                font-size: 0.8em;
+            }
+
+            .github-link svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .toc a {
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+
+            .dashboard {
+                gap: 15px;
+            }
+
+            .tooltip {
+                font-size: 0.7em;
+                max-width: 180px;
+                padding: 6px 10px;
             }
         }
     </style>
@@ -540,9 +728,20 @@
         }
 
         function renderMainChart(data, results, events) {
-            const margin = {top: 20, right: 30, bottom: 60, left: 60};
+            const isMobile = window.innerWidth <= 768;
+            const isSmallMobile = window.innerWidth <= 480;
+            
+            const margin = {
+                top: 20, 
+                right: isSmallMobile ? 10 : (isMobile ? 20 : 30), 
+                bottom: isSmallMobile ? 50 : (isMobile ? 55 : 60), 
+                left: isSmallMobile ? 40 : (isMobile ? 50 : 60)
+            };
+            
             const width = document.getElementById('main-chart').clientWidth - margin.left - margin.right;
-            const height = 600 - margin.top - margin.bottom;
+            const chartContainer = document.getElementById('main-chart');
+            const containerHeight = parseInt(window.getComputedStyle(chartContainer).height);
+            const height = containerHeight - margin.top - margin.bottom;
 
             // Clear existing chart
             d3.select('#main-chart').selectAll('*').remove();
@@ -567,30 +766,35 @@
             svg.append('g')
                 .attr('class', 'grid')
                 .call(d3.axisLeft(yScale)
+                    .ticks(isSmallMobile ? 5 : (isMobile ? 7 : 10))
                     .tickSize(-width)
                     .tickFormat(''));
 
             // Axes
             const xAxis = d3.axisBottom(xScale)
-                .ticks(10)
-                .tickFormat(d3.timeFormat('%b %Y'));
+                .ticks(isSmallMobile ? 4 : (isMobile ? 6 : 10))
+                .tickFormat(d3.timeFormat(isSmallMobile ? '%b %y' : '%b %Y'));
 
             svg.append('g')
                 .attr('transform', `translate(0,${height})`)
                 .call(xAxis)
                 .selectAll('text')
                 .attr('transform', 'rotate(-45)')
-                .style('text-anchor', 'end');
+                .style('text-anchor', 'end')
+                .style('font-size', isSmallMobile ? '10px' : '11px');
 
             svg.append('g')
-                .call(d3.axisLeft(yScale));
+                .call(d3.axisLeft(yScale).ticks(isSmallMobile ? 5 : (isMobile ? 7 : 10)))
+                .selectAll('text')
+                .style('font-size', isSmallMobile ? '10px' : '11px');
 
             // Axis labels
             svg.append('text')
                 .attr('class', 'axis-label')
                 .attr('text-anchor', 'middle')
                 .attr('x', width / 2)
-                .attr('y', height + 50)
+                .attr('y', height + (isSmallMobile ? 45 : 50))
+                .style('font-size', isSmallMobile ? '12px' : '14px')
                 .text('Date');
 
             svg.append('text')
@@ -598,7 +802,8 @@
                 .attr('text-anchor', 'middle')
                 .attr('transform', 'rotate(-90)')
                 .attr('x', -height / 2)
-                .attr('y', -45)
+                .attr('y', -(isSmallMobile ? 30 : (isMobile ? 38 : 45)))
+                .style('font-size', isSmallMobile ? '12px' : '14px')
                 .text('Support (%)');
 
             // Tooltip
@@ -644,10 +849,13 @@
                     .attr('class', `line-${party}`)
                     .attr('fill', 'none')
                     .attr('stroke', PARTY_COLORS[party])
-                    .attr('stroke-width', 3)
+                    .attr('stroke-width', isSmallMobile ? 2 : 3)
                     .attr('d', line);
 
                 // Actual data points
+                const dotRadius = isSmallMobile ? 2 : 3;
+                const dotHoverRadius = isSmallMobile ? 4 : 6;
+                
                 svg.selectAll(`.dot-${party}`)
                     .data(partyData.filter(d => d.actual != null))
                     .enter()
@@ -655,14 +863,15 @@
                     .attr('class', `dot-${party}`)
                     .attr('cx', d => xScale(d.date))
                     .attr('cy', d => yScale(d.actual))
-                    .attr('r', 3)
+                    .attr('r', dotRadius)
                     .attr('fill', PARTY_COLORS[party])
                     .attr('opacity', 0.6)
-                    .on('mouseover', function(event, d) {
+                    .on('mouseover touchstart', function(event, d) {
+                        event.preventDefault();
                         d3.select(this)
                             .transition()
                             .duration(200)
-                            .attr('r', 6);
+                            .attr('r', dotHoverRadius);
                         
                         let tooltipHtml = `
                             <strong>${PARTY_NAMES[party]}</strong><br>
@@ -682,17 +891,31 @@
                             Model: ${d.mean.toFixed(1)}%<br>
                             95% HDI: ${d.hdi_lower.toFixed(1)}% - ${d.hdi_upper.toFixed(1)}%`;
                         
+                        const pageX = event.touches ? event.touches[0].pageX : event.pageX;
+                        const pageY = event.touches ? event.touches[0].pageY : event.pageY;
+                        
+                        // Adjust tooltip position to prevent it from going off-screen
+                        let tooltipX = pageX + 10;
+                        let tooltipY = pageY - 10;
+                        
+                        if (isMobile) {
+                            const tooltipWidth = 200; // approximate width
+                            if (tooltipX + tooltipWidth > window.innerWidth) {
+                                tooltipX = pageX - tooltipWidth - 10;
+                            }
+                        }
+                        
                         tooltip
                             .html(tooltipHtml)
                             .classed('visible', true)
-                            .style('left', (event.pageX + 10) + 'px')
-                            .style('top', (event.pageY - 10) + 'px');
+                            .style('left', tooltipX + 'px')
+                            .style('top', tooltipY + 'px');
                     })
-                    .on('mouseout', function() {
+                    .on('mouseout touchend', function() {
                         d3.select(this)
                             .transition()
                             .duration(200)
-                            .attr('r', 3);
+                            .attr('r', dotRadius);
                         
                         tooltip.classed('visible', false);
                     });
