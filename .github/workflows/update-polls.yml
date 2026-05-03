@@ -1,0 +1,91 @@
+name: Update UK Polling Data
+
+on:
+  schedule:
+    # Run once per day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allow manual triggering
+
+permissions:
+  contents: write
+
+jobs:
+  update-polls:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        cache: 'pip'
+        
+    - name: Install uv
+      run: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+        
+    - name: Install dependencies
+      run: |
+        uv pip install --system -e .
+        
+    - name: Download current Wikipedia page
+      id: download
+      run: |
+        curl -s "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election" > data/raw/poll_new.html
+        
+    - name: Check if page has changed
+      id: check_changes
+      run: |
+        if [ -f "data/raw/poll.html" ]; then
+          # Compare the new page with the old one (ignoring timestamps and dynamic content)
+          # We'll use a simple diff, but strip out common dynamic elements
+          if diff -q data/raw/poll.html data/raw/poll_new.html > /dev/null; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in Wikipedia page"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in Wikipedia page"
+          fi
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "First run - no existing poll.html file"
+        fi
+        
+    - name: Update poll.html if changed
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        mv data/raw/poll_new.html data/raw/poll.html
+        
+    - name: Run extract_polls.py
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        python extract_polls.py
+        
+    - name: Run main.py
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        python main.py
+        
+    - name: Check for data changes
+      if: steps.check_changes.outputs.changed == 'true'
+      id: git_status
+      run: |
+        git diff --exit-code || echo "has_changes=true" >> $GITHUB_OUTPUT
+        
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.changed == 'true' && steps.git_status.outputs.has_changes == 'true'
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/raw/poll.html data/processed/*.json data/processed/*.parquet || true
+        git commit -m "Update polling data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+        git push
+        
+    - name: Clean up
+      if: always()
+      run: |
+        rm -f data/raw/poll_new.html
