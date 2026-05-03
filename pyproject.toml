@@ -16,3 +16,10 @@ dependencies = [
     "patsy>=1.0.2",
     "nutpie[pymc]>=0.16.8",
 ]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["data*", "notebooks*"]
