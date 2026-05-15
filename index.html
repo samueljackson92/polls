@@ -1361,12 +1361,6 @@
                     .style('font-weight', '600')
                     .text(`${arrow} ${changeSign}${change.toFixed(1)}%`);
 
-                statCard.append('div')
-                    .style('font-size', '0.8em')
-                    .style('margin-top', '5px')
-                    .style('opacity', '0.9')
-                    .text('Latest Estimate');
-
                 // Calculate uncertainty in the most recent estimate (HDI width at last time point)
                 const lastIndex = results[party].mean.length - 1;
                 const latestUncertainty = results[party].hdi_upper[lastIndex] - results[party].hdi_lower[lastIndex];
