@@ -267,6 +267,45 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .export-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            background: #222;
+            color: white;
+            border: 2px solid #222;
+            border-radius: 4px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 600;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .export-btn:hover {
+            background: white;
+            color: #222;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .export-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
         .rating-badge {
             display: inline-block;
             padding: 4px 8px;
@@ -476,6 +515,23 @@
                 padding-bottom: 8px;
             }
 
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .section-header h2 {
+                margin-bottom: 0;
+            }
+
+            .export-btn {
+                width: 100%;
+                justify-content: center;
+                font-size: 0.8em;
+                padding: 8px 12px;
+            }
+
             #main-chart {
                 height: 400px;
             }
@@ -568,6 +624,23 @@
 
             .card h2 {
                 font-size: 1.1em;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .section-header h2 {
+                margin-bottom: 0;
+            }
+
+            .export-btn {
+                width: 100%;
+                justify-content: center;
+                font-size: 0.75em;
+                padding: 6px 10px;
             }
 
             #main-chart {
@@ -684,7 +757,17 @@
             </div>
 
             <div class="card" id="polls">
-                <h2>Polls Used</h2>
+                <div class="section-header">
+                    <h2>Polls Used</h2>
+                    <button class="export-btn" onclick="exportPollsData()">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 1.5A.5.5 0 0 1 9 2v5.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 7.793V2a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                        </svg>
+                        Export CSV
+                    </button>
+                </div>
                 <div class="poll-count" id="poll-count"></div>
                 <div class="polls-table-container">
                     <table class="polls-table" id="polls-table">
@@ -712,7 +795,17 @@
             </div>
 
             <div class="card" id="pollster-ratings">
-                <h2>Pollster Ratings</h2>
+                <div class="section-header">
+                    <h2>Pollster Ratings</h2>
+                    <button class="export-btn" onclick="exportPollsterData()">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 1.5A.5.5 0 0 1 9 2v5.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 7.793V2a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                        </svg>
+                        Export CSV
+                    </button>
+                </div>
                 <div class="poll-count" id="pollster-count"></div>
                 <div class="polls-table-container">
                     <table class="polls-table" id="pollster-ratings-table">
@@ -825,6 +918,10 @@
         });
 
         function renderDashboard(pollingData, results, events, pollsterBiases) {
+            // Cache data for export functions
+            pollsDataCache = pollingData;
+            pollsterBiasesCache = pollsterBiases;
+
             // Parse dates
             pollingData.forEach(d => {
                 d.date = new Date(d.date);
@@ -1345,6 +1442,118 @@
                         .text(bias != null ? (bias > 0 ? '+' : '') + bias.toFixed(1) : '-');
                 });
             });
+        }
+
+        // Export functions
+        let pollsDataCache = null;
+        let pollsterBiasesCache = null;
+
+        function escapeCSV(value) {
+            if (value == null) return '';
+            const str = String(value);
+            // If the value contains comma, quote, or newline, wrap in quotes and escape internal quotes
+            if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+                return `"${str.replace(/"/g, '""')}"`;
+            }
+            return str;
+        }
+
+        function exportPollsData() {
+            if (!pollsDataCache) {
+                alert('Data not yet loaded. Please wait for the page to fully load.');
+                return;
+            }
+
+            // Sort by date descending (most recent first) to match table display
+            const sortedData = [...pollsDataCache].sort((a, b) => b.date - a.date);
+
+            // Create CSV header
+            const headers = ['Date', 'Pollster', 'Rating', 'Client', 'Sample', 'CON', 'LAB', 'REF', 'LD', 'GRN', 'PC', 'SNP', 'OTH'];
+            const rows = [headers.join(',')];
+
+            // Add data rows
+            sortedData.forEach(poll => {
+                const rating = pollsterBiasesCache[poll.pollster]?.rating || 'N/A';
+                const row = [
+                    d3.timeFormat('%Y-%m-%d')(poll.date),
+                    escapeCSV(poll.pollster || '-'),
+                    rating,
+                    escapeCSV(poll.client && poll.client !== 'N/A' ? poll.client : '-'),
+                    poll.sample_size || '',
+                    poll.conservative != null ? poll.conservative.toFixed(1) : '',
+                    poll.labour != null ? poll.labour.toFixed(1) : '',
+                    poll.reform != null ? poll.reform.toFixed(1) : '',
+                    poll.liberal_democrats != null ? poll.liberal_democrats.toFixed(1) : '',
+                    poll.green != null ? poll.green.toFixed(1) : '',
+                    poll.plaid_cymru != null ? poll.plaid_cymru.toFixed(1) : '',
+                    poll.snp != null ? poll.snp.toFixed(1) : '',
+                    poll.others != null ? poll.others.toFixed(1) : ''
+                ];
+                rows.push(row.join(','));
+            });
+
+            // Create and download CSV
+            const csv = rows.join('\n');
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', `uk_polls_${d3.timeFormat('%Y%m%d')(new Date())}.csv`);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function exportPollsterData() {
+            if (!pollsterBiasesCache) {
+                alert('Data not yet loaded. Please wait for the page to fully load.');
+                return;
+            }
+
+            // Create CSV header
+            const headers = ['Pollster', 'Rating', 'Overall Bias (%)', 'CON', 'LAB', 'REF', 'LD', 'GRN', 'PC', 'SNP', 'OTH'];
+            const rows = [headers.join(',')];
+
+            // Sort pollsters by rating and overall bias (same as table)
+            const ratingOrder = {'A+': 1, 'A': 2, 'B+': 3, 'B': 4, 'C+': 5, 'C': 6, 'D': 7, 'F': 8};
+            const sortedPollsters = Object.entries(pollsterBiasesCache)
+                .sort((a, b) => {
+                    const ratingA = ratingOrder[a[1].rating] || 9;
+                    const ratingB = ratingOrder[b[1].rating] || 9;
+                    if (ratingA !== ratingB) return ratingA - ratingB;
+                    return a[1].overall_bias - b[1].overall_bias;
+                });
+
+            // Add data rows
+            sortedPollsters.forEach(([pollster, biases]) => {
+                const row = [
+                    escapeCSV(pollster),
+                    biases.rating || 'N/A',
+                    biases.overall_bias != null ? biases.overall_bias.toFixed(2) : '',
+                    biases.conservative?.mean != null ? biases.conservative.mean.toFixed(1) : '',
+                    biases.labour?.mean != null ? biases.labour.mean.toFixed(1) : '',
+                    biases.reform?.mean != null ? biases.reform.mean.toFixed(1) : '',
+                    biases.liberal_democrats?.mean != null ? biases.liberal_democrats.mean.toFixed(1) : '',
+                    biases.green?.mean != null ? biases.green.mean.toFixed(1) : '',
+                    biases.plaid_cymru?.mean != null ? biases.plaid_cymru.mean.toFixed(1) : '',
+                    biases.snp?.mean != null ? biases.snp.mean.toFixed(1) : '',
+                    biases.others?.mean != null ? biases.others.mean.toFixed(1) : ''
+                ];
+                rows.push(row.join(','));
+            });
+
+            // Create and download CSV
+            const csv = rows.join('\n');
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', `pollster_ratings_${d3.timeFormat('%Y%m%d')(new Date())}.csv`);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
 
         // Handle window resize
