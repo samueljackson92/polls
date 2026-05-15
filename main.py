@@ -30,8 +30,8 @@ PARTY_COLORS = {
 
 def no_pooling_model(df: pd.DataFrame):
     """
-    No-pooling model: each party gets its own independent trend.
-    All parties are fit simultaneously in one model.
+    Hierarchical model with pollster bias estimation.
+    Each party gets its own independent trend, and each pollster has party-specific biases.
     """
     x = df["date"].values.astype("datetime64[D]").astype(float)  # convert to float days
 
@@ -51,6 +51,13 @@ def no_pooling_model(df: pd.DataFrame):
     num_parties = len(PARTIES)
     n_obs = len(df)
 
+    # Create pollster indices
+    pollsters = df["pollster"].unique()
+    pollster_map = {p: i for i, p in enumerate(pollsters)}
+    pollster_idx = df["pollster"].map(pollster_map).values
+    num_pollsters = len(pollsters)
+    print(f"Number of pollsters: {num_pollsters}")
+
     # Stack observations for all parties
     y_data = np.column_stack(
         [df[party].values for party in PARTIES]
@@ -66,9 +73,25 @@ def no_pooling_model(df: pd.DataFrame):
         )
         coefs = pm.Deterministic("coefs", pm.math.cumsum(delta, axis=1))
 
-        # Mean function for each party
+        # Mean function for each party (underlying true support)
         # B @ coefs.T gives shape (n_obs, num_parties)
-        mu = pm.Deterministic("mu", pm.math.dot(B, coefs.T))
+        mu_true = pm.math.dot(B, coefs.T)
+
+        # Hierarchical pollster bias: each pollster has a bias for each party
+        # Hyperpriors for pollster bias
+        sigma_pollster = pm.HalfNormal("sigma_pollster", sigma=2.0, shape=num_parties)
+
+        # Pollster-specific biases: shape (num_pollsters, num_parties)
+        pollster_bias = pm.Normal(
+            "pollster_bias",
+            mu=0,
+            sigma=sigma_pollster,
+            shape=(num_pollsters, num_parties),
+        )
+
+        # Add pollster bias to the mean function
+        # pollster_bias[pollster_idx] has shape (n_obs, num_parties)
+        mu = pm.Deterministic("mu", mu_true + pollster_bias[pollster_idx, :])
 
         # Likelihood - separate sigma for each party
         sigma = pm.HalfNormal("sigma", sigma=1.0, shape=num_parties)
@@ -94,7 +117,49 @@ def no_pooling_model(df: pd.DataFrame):
         mu_hdi = np.percentile(mu_party, [2.5, 97.5], axis=0)
         party_results[party] = {"mean": mu_mean, "hdi": mu_hdi}
 
-    return party_results, trace
+    # Extract pollster biases
+    pollster_bias_samples = trace.posterior["pollster_bias"].values
+    pollster_bias_samples = pollster_bias_samples.reshape(
+        -1, num_pollsters, num_parties
+    )
+
+    pollster_biases = {}
+    for i, pollster in enumerate(pollsters):
+        pollster_biases[pollster] = {}
+        for j, party in enumerate(PARTIES):
+            bias_samples = pollster_bias_samples[:, i, j]
+            pollster_biases[pollster][party] = {
+                "mean": float(bias_samples.mean()),
+                "std": float(bias_samples.std()),
+                "hdi": [float(x) for x in np.percentile(bias_samples, [2.5, 97.5])],
+            }
+
+        # Compute overall pollster bias (RMS across parties)
+        party_biases = [pollster_biases[pollster][party]["mean"] for party in PARTIES]
+        overall_bias = float(np.sqrt(np.mean(np.array(party_biases) ** 2)))
+
+        # Compute pollster rating based on overall bias
+        if overall_bias < 0.5:
+            rating = "A+"
+        elif overall_bias < 1.0:
+            rating = "A"
+        elif overall_bias < 1.5:
+            rating = "B+"
+        elif overall_bias < 2.0:
+            rating = "B"
+        elif overall_bias < 2.5:
+            rating = "C+"
+        elif overall_bias < 3.0:
+            rating = "C"
+        elif overall_bias < 4.0:
+            rating = "D"
+        else:
+            rating = "F"
+
+        pollster_biases[pollster]["overall_bias"] = overall_bias
+        pollster_biases[pollster]["rating"] = rating
+
+    return party_results, trace, pollster_biases
 
 
 def main():
@@ -102,7 +167,7 @@ def main():
     df = df.dropna(subset=["date"])
     df = df.loc[~df.sample_size.isna()]
 
-    results, trace = no_pooling_model(df)
+    results, trace, pollster_biases = no_pooling_model(df)
 
     # Save results as JSON (convert numpy arrays to lists)
     results_json = {}
@@ -131,6 +196,10 @@ def main():
     # Write results to JSON file
     with open("data/processed/polling_results.json", "w") as f:
         json.dump(results_json, f, indent=2)
+
+    # Write pollster biases to JSON file
+    with open("data/processed/pollster_biases.json", "w") as f:
+        json.dump(pollster_biases, f, indent=2)
 
     plt.xlabel("Date")
     plt.ylabel("Support (%)")

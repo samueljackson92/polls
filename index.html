@@ -258,6 +258,54 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
+        .rating-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 0.95em;
+        }
+
+        .rating-A-plus {
+            background: #4caf50;
+            color: white;
+        }
+
+        .rating-A {
+            background: #8bc34a;
+            color: white;
+        }
+
+        .rating-B-plus {
+            background: #cddc39;
+            color: #333;
+        }
+
+        .rating-B {
+            background: #ffeb3b;
+            color: #333;
+        }
+
+        .rating-C-plus {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .rating-C {
+            background: #ff9800;
+            color: white;
+        }
+
+        .rating-D {
+            background: #ff5722;
+            color: white;
+        }
+
+        .rating-F {
+            background: #f44336;
+            color: white;
+        }
+
         .about-section p {
             line-height: 1.7;
             margin-bottom: 15px;
@@ -581,6 +629,7 @@
             <a href="#trends">📈 Polling Trends</a>
             <a href="#standings">📊 Current Standings</a>
             <a href="#polls">📋 Polls Used</a>
+            <a href="#pollster-ratings">⭐ Pollster Ratings</a>
             <a href="#about">ℹ️ About</a>
         </nav>
         
@@ -605,6 +654,7 @@
                             <tr>
                                 <th>Date</th>
                                 <th>Pollster</th>
+                                <th>Rating</th>
                                 <th>Client</th>
                                 <th>Sample</th>
                                 <th>CON</th>
@@ -623,6 +673,32 @@
                 </div>
             </div>
 
+            <div class="card" id="pollster-ratings">
+                <h2>Pollster Ratings</h2>
+                <div class="poll-count" id="pollster-count"></div>
+                <div class="polls-table-container">
+                    <table class="polls-table" id="pollster-ratings-table">
+                        <thead>
+                            <tr>
+                                <th>Pollster</th>
+                                <th>Rating</th>
+                                <th>Overall Bias</th>
+                                <th>CON</th>
+                                <th>LAB</th>
+                                <th>REF</th>
+                                <th>LD</th>
+                                <th>GRN</th>
+                                <th>PC</th>
+                                <th>SNP</th>
+                                <th>OTH</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pollster-ratings-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
             <div class="card" id="about">
                 <h2>About This Dashboard</h2>
                 <div class="about-section">
@@ -630,7 +706,9 @@
                     
                     <p><strong>Methodology:</strong></p>
                     <ul>
-                        <li><strong>Model:</strong> Bayesian B-spline regression with separate smooth trends for each party</li>
+                        <li><strong>Model:</strong> Bayesian hierarchical B-spline regression with separate smooth trends for each party</li>
+                        <li><strong>Pollster bias estimation:</strong> Party-specific biases are estimated for each pollster using a hierarchical prior</li>
+                        <li><strong>Pollster ratings:</strong> Based on overall RMS bias across all parties (A+ to F scale)</li>
                         <li><strong>Uncertainty quantification:</strong> 95% highest density intervals (HDI) shown as shaded regions</li>
                         <li><strong>Sampling:</strong> Posterior distributions estimated using MCMC (via PyMC with NUTS sampler)</li>
                         <li><strong>Smoothing:</strong> Adaptive splines with one knot approximately every month</li>
@@ -647,12 +725,19 @@
                     </ul>
                     
 
+                    <p><strong>Pollster Ratings:</strong></p>
+                    <ul>
+                        <li><strong>Overall bias:</strong> Root mean square (RMS) of party-specific biases</li>
+                        <li><strong>Rating scale:</strong> A+ (< 0.5%), A (0.5-1.0%), B+ (1.0-1.5%), B (1.5-2.0%), C+ (2.0-2.5%), C (2.5-3.0%), D (3.0-4.0%), F (> 4.0%)</li>
+                        <li><strong>Bias values:</strong> Positive values indicate overestimation, negative values indicate underestimation</li>
+                    </ul>
+
                     <p><strong>Limitations:</strong></p>
                     <ul>
-                        <li>The model treats all polls as equally reliable, without weighting based on bias or pollster reputation.</li>
                         <li>The model treats each party independently, without accounting for potential correlations or interactions between parties. Vote shares likely therefore do not sum to 100%.</li>
+                        <li>Pollster biases are estimated from historical data and may not reflect future performance or methodological changes.</li>
                     </ul>
-                    <p> In future iterations, I may explore more complex models that address these limitations, such as hierarchical models that account for pollster bias, or multinomial to model vote shares more accurately.</p>
+                    <p>In future iterations, I may explore more complex models that address these limitations, such as multinomial models to ensure vote shares sum to 100%, or time-varying bias estimation.</p>
 
                     <p><strong>Note:</strong> This is a statistical model and should not be interpreted as a prediction or forecast. Polling can be volatile and may not accurately reflect final election results.</p>
                 </div>
@@ -691,16 +776,17 @@
         Promise.all([
             d3.json('data/processed/polling_data.json'),
             d3.json('data/processed/polling_results.json'),
-            d3.json('data/processed/events.json')
-        ]).then(([pollingData, results, events]) => {
-            renderDashboard(pollingData, results, events);
+            d3.json('data/processed/events.json'),
+            d3.json('data/processed/pollster_biases.json')
+        ]).then(([pollingData, results, events, pollsterBiases]) => {
+            renderDashboard(pollingData, results, events, pollsterBiases);
         }).catch(error => {
             console.error('Error loading data:', error);
             document.getElementById('main-chart').innerHTML = 
-                '<div class="loading">Error loading data. Please ensure polling_data.json, polling_results.json, and events.json are in the same directory.</div>';
+                '<div class="loading">Error loading data. Please ensure polling_data.json, polling_results.json, events.json, and pollster_biases.json are in the same directory.</div>';
         });
 
-        function renderDashboard(pollingData, results, events) {
+        function renderDashboard(pollingData, results, events, pollsterBiases) {
             // Parse dates
             pollingData.forEach(d => {
                 d.date = new Date(d.date);
@@ -721,7 +807,10 @@
             renderStats(results, pollingData);
 
             // Render polls table
-            renderPolls(pollingData);
+            renderPolls(pollingData, pollsterBiases);
+
+            // Render pollster ratings
+            renderPollsterRatings(pollsterBiases);
 
             // Render legend
             renderLegend();
@@ -1019,7 +1108,7 @@
             });
         }
 
-        function renderPolls(data) {
+        function renderPolls(data, pollsterBiases) {
             const pollCount = d3.select('#poll-count');
             pollCount.text(`Total polls: ${data.length}`);
 
@@ -1038,6 +1127,19 @@
                 
                 row.append('td')
                     .text(poll.pollster || '-');
+                
+                // Add rating column
+                const rating = pollsterBiases[poll.pollster]?.rating || 'N/A';
+                const ratingCell = row.append('td')
+                    .style('text-align', 'center');
+                
+                if (rating !== 'N/A') {
+                    ratingCell.append('span')
+                        .attr('class', `rating-badge rating-${rating.replace('+', '-plus')}`)
+                        .text(rating);
+                } else {
+                    ratingCell.text(rating);
+                }
                 
                 row.append('td')
                     .text(poll.client && poll.client !== 'N/A' ? poll.client : '-');
@@ -1133,17 +1235,90 @@
                 });
         }
 
+        function renderPollsterRatings(pollsterBiases) {
+            const pollsterCount = d3.select('#pollster-count');
+            const numPollsters = Object.keys(pollsterBiases).length;
+            pollsterCount.text(`Total pollsters: ${numPollsters}`);
+
+            const tbody = d3.select('#pollster-ratings-tbody');
+            tbody.selectAll('*').remove();
+
+            // Sort pollsters by rating (A+ to F) and overall bias
+            const ratingOrder = {'A+': 1, 'A': 2, 'B+': 3, 'B': 4, 'C+': 5, 'C': 6, 'D': 7, 'F': 8};
+            const sortedPollsters = Object.entries(pollsterBiases)
+                .sort((a, b) => {
+                    const ratingA = ratingOrder[a[1].rating] || 9;
+                    const ratingB = ratingOrder[b[1].rating] || 9;
+                    if (ratingA !== ratingB) return ratingA - ratingB;
+                    return a[1].overall_bias - b[1].overall_bias;
+                });
+
+            sortedPollsters.forEach(([pollster, biases]) => {
+                const row = tbody.append('tr');
+                
+                row.append('td')
+                    .style('font-weight', '600')
+                    .text(pollster);
+                
+                // Rating
+                const rating = biases.rating || 'N/A';
+                const ratingCell = row.append('td')
+                    .style('text-align', 'center');
+                
+                if (rating !== 'N/A') {
+                    ratingCell.append('span')
+                        .attr('class', `rating-badge rating-${rating.replace('+', '-plus')}`)
+                        .text(rating);
+                } else {
+                    ratingCell.text(rating);
+                }
+                
+                // Overall bias
+                row.append('td')
+                    .style('text-align', 'center')
+                    .text(biases.overall_bias != null ? biases.overall_bias.toFixed(2) + '%' : '-');
+                
+                // Party-specific biases
+                ['conservative', 'labour', 'reform', 'liberal_democrats', 'green', 'plaid_cymru', 'snp', 'others'].forEach(party => {
+                    const bias = biases[party]?.mean;
+                    const absBias = Math.abs(bias);
+                    
+                    // Calculate background color intensity based on bias magnitude
+                    let backgroundColor = 'transparent';
+                    if (bias > 0) {
+                        // Positive bias - orange background
+                        const intensity = Math.min(absBias / 5, 1); // Cap at 5% bias
+                        const alpha = 0.1 + (intensity * 0.3); // Range from 0.1 to 0.4 opacity
+                        backgroundColor = `rgba(245, 124, 0, ${alpha})`;
+                    } else if (bias < 0) {
+                        // Negative bias - purple background
+                        const intensity = Math.min(absBias / 5, 1);
+                        const alpha = 0.1 + (intensity * 0.3);
+                        backgroundColor = `rgba(123, 31, 162, ${alpha})`;
+                    }
+                    
+                    row.append('td')
+                        .style('text-align', 'center')
+                        .style('background-color', backgroundColor)
+                        .style('color', bias > 0 ? '#f57c00' : (bias < 0 ? '#7b1fa2' : '#666'))
+                        .style('font-weight', Math.abs(bias) > 2 ? '600' : 'normal')
+                        .text(bias != null ? (bias > 0 ? '+' : '') + bias.toFixed(1) : '-');
+                });
+            });
+        }
+
         // Handle window resize
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
                 Promise.all([
-                    d3.json('polling_data.json'),
-                    d3.json('polling_results.json'),
-                    d3.json('events.json')
-                ]).then(([pollingData, results, events]) => {
-                    renderDashboard(pollingData, results, events);
+                    d3.json('data/processed/polling_data.json'),
+                    d3.json('data/processed/polling_results.json'),
+                    d3.json('data/processed/events.json'),
+                    d3.json('data/processed/pollster_biases.json')
+                ]).then(([pollingData, results, events, pollsterBiases]) => {
+                    renderDashboard(pollingData, results, events, pollsterBiases);
                 });
             }, 250);
         });
