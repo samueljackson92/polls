@@ -750,10 +750,64 @@
             <div class="card" id="trends">
                 <h2>Current Polling Trends</h2>
                 <p style="margin-bottom: 15px; color: #333; line-height: 1.6;">
-                    This chart shows the estimated underlying support for each party over time. The solid lines represent the model's best estimate of true support after accounting for pollster biases and sampling noise. Shaded regions show 95% credible intervals—the wider the band, the greater the uncertainty. Individual poll results are shown as scattered points, color-coded by party. Click legend items to show or hide parties.
+                    This chart shows the estimated underlying support for each party over time. The solid lines represent the model's best estimate of true support after accounting for pollster biases and sampling noise. Shaded regions show 95% credible intervals—the wider the band, the greater the uncertainty. Individual poll results are shown as scattered points, color-coded by party and shaded by pollster quality (darker points indicate higher-rated pollsters). Click legend items to show or hide parties.
                 </p>
                 <div id="main-chart"></div>
                 <div class="legend" id="legend"></div>
+                <div style="margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 4px; border: 1px solid #e0e0e0;">
+                    <div style="font-size: 0.85em; font-weight: 600; margin-bottom: 10px; color: #222; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">Pollster Quality Guide</div>
+                    <div style="font-size: 0.8em; color: #666; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">Data points are sized and shaded by pollster rating (larger and darker = higher quality):</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: center;">
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="5.2" fill="#666" opacity="1.0" stroke="#666" stroke-width="1.5" stroke-opacity="0.4"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">A+ (best)</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="4.8" fill="#666" opacity="0.9" stroke="#666" stroke-width="1.5" stroke-opacity="0.4"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">A</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="4.2" fill="#666" opacity="0.7"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">B+</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="3.7" fill="#666" opacity="0.5"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">B</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="3.3" fill="#666" opacity="0.35"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">C+</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="3.1" fill="#666" opacity="0.25"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">C</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="2.9" fill="#666" opacity="0.18"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">D</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <svg width="30" height="20">
+                                <circle cx="15" cy="10" r="2.7" fill="#666" opacity="0.12"/>
+                            </svg>
+                            <span style="font-size: 0.75em; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">F (worst)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="card" id="standings">
@@ -866,7 +920,7 @@
                     <ul>
                         <li><strong>Solid lines:</strong> Model's best estimate of party support over time</li>
                         <li><strong>Shaded areas:</strong> 95% credible intervals - there's a 95% probability the true value falls within this range</li>
-                        <li><strong>Scattered points:</strong> Raw polling data from individual surveys</li>
+                        <li><strong>Scattered points:</strong> Raw polling data from individual surveys, with opacity reflecting pollster quality (darker = higher rating)</li>
                         <li><strong>Interactive legend:</strong> Click on party names to show/hide them from the chart</li>
                     </ul>
                     
@@ -951,7 +1005,7 @@
             pollingData.sort((a, b) => a.date - b.date);
 
             // Render main chart
-            renderMainChart(pollingData, results, events);
+            renderMainChart(pollingData, results, events, pollsterBiases);
 
             // Render stats
             renderStats(results, pollingData);
@@ -966,7 +1020,37 @@
             renderLegend();
         }
 
-        function renderMainChart(data, results, events) {
+        function getPollsterOpacity(rating) {
+            // Map ratings to opacity values (higher quality = higher opacity)
+            const opacityMap = {
+                'A+': 1.0,
+                'A': 0.9,
+                'B+': 0.7,
+                'B': 0.5,
+                'C+': 0.35,
+                'C': 0.25,
+                'D': 0.18,
+                'F': 0.12
+            };
+            return opacityMap[rating] || 0.4; // Default to 0.4 for unknown ratings
+        }
+
+        function getPollsterRadius(rating, baseRadius) {
+            // Map ratings to size multipliers (higher quality = slightly larger)
+            const sizeMap = {
+                'A+': 1.4,
+                'A': 1.3,
+                'B+': 1.15,
+                'B': 1.0,
+                'C+': 0.9,
+                'C': 0.85,
+                'D': 0.8,
+                'F': 0.75
+            };
+            return baseRadius * (sizeMap[rating] || 1.0);
+        }
+
+        function renderMainChart(data, results, events, pollsterBiases) {
             const isMobile = window.innerWidth <= 768;
             const isSmallMobile = window.innerWidth <= 480;
             
@@ -1062,7 +1146,8 @@
                     hdi_upper: results[party].hdi_upper[i],
                     pollster: d.pollster,
                     client: d.client,
-                    sample_size: d.sample_size
+                    sample_size: d.sample_size,
+                    rating: pollsterBiases[d.pollster]?.rating || null
                 }));
 
                 // HDI area
@@ -1094,8 +1179,8 @@
                     .attr('d', line);
 
                 // Actual data points
-                const dotRadius = isSmallMobile ? 2 : 3;
-                const dotHoverRadius = isSmallMobile ? 4 : 6;
+                const baseDotRadius = isSmallMobile ? 2 : 3;
+                const dotHoverRadius = isSmallMobile ? 5 : 7;
                 
                 svg.selectAll(`.dot-${party}`)
                     .data(partyData.filter(d => d.actual != null))
@@ -1104,9 +1189,14 @@
                     .attr('class', `dot-${party}`)
                     .attr('cx', d => xScale(d.date))
                     .attr('cy', d => yScale(d.actual))
-                    .attr('r', dotRadius)
+                    .attr('r', d => d.rating ? getPollsterRadius(d.rating, baseDotRadius) : baseDotRadius)
                     .attr('fill', PARTY_COLORS[party])
-                    .attr('opacity', 0.6)
+                    .attr('stroke', d => (d.rating === 'A+' || d.rating === 'A') ? PARTY_COLORS[party] : 'none')
+                    .attr('stroke-width', d => (d.rating === 'A+' || d.rating === 'A') ? 1.5 : 0)
+                    .attr('stroke-opacity', 0.4)
+                    .attr('opacity', d => d.rating ? getPollsterOpacity(d.rating) : 0.4)
+                    .attr('data-base-opacity', d => d.rating ? getPollsterOpacity(d.rating) : 0.4)
+                    .attr('data-base-radius', d => d.rating ? getPollsterRadius(d.rating, baseDotRadius) : baseDotRadius)
                     .on('mouseover touchstart', function(event, d) {
                         event.preventDefault();
                         d3.select(this)
@@ -1119,7 +1209,11 @@
                             Date: ${d3.timeFormat('%b %d, %Y')(d.date)}<br>`;
                         
                         if (d.pollster) {
-                            tooltipHtml += `Pollster: ${d.pollster}<br>`;
+                            tooltipHtml += `Pollster: ${d.pollster}`;
+                            if (d.rating) {
+                                tooltipHtml += ` (${d.rating})`;
+                            }
+                            tooltipHtml += '<br>';
                         }
                         if (d.client && d.client !== 'N/A') {
                             tooltipHtml += `Client: ${d.client}<br>`;
@@ -1152,11 +1246,12 @@
                             .style('left', tooltipX + 'px')
                             .style('top', tooltipY + 'px');
                     })
-                    .on('mouseout touchend', function() {
+                    .on('mouseout touchend', function(event, d) {
+                        const baseRadius = d3.select(this).attr('data-base-radius');
                         d3.select(this)
                             .transition()
                             .duration(200)
-                            .attr('r', dotRadius);
+                            .attr('r', baseRadius ? parseFloat(baseRadius) : baseDotRadius);
                         
                         tooltip.classed('visible', false);
                     });
@@ -1264,7 +1359,7 @@
                     .style('font-size', '0.75em')
                     .style('margin-top', '3px')
                     .style('font-weight', '600')
-                    .text(`${arrow} ${changeSign}${change.toFixed(1)}% (30d)`);
+                    .text(`${arrow} ${changeSign}${change.toFixed(1)}%`);
 
                 statCard.append('div')
                     .style('font-size', '0.8em')
@@ -1272,17 +1367,15 @@
                     .style('opacity', '0.9')
                     .text('Latest Estimate');
 
-                // Calculate mean trend uncertainty (average HDI width over all time points)
-                const hdiWidths = results[party].hdi_upper.map((upper, i) => 
-                    upper - results[party].hdi_lower[i]
-                );
-                const meanUncertainty = hdiWidths.reduce((sum, width) => sum + width, 0) / hdiWidths.length;
+                // Calculate uncertainty in the most recent estimate (HDI width at last time point)
+                const lastIndex = results[party].mean.length - 1;
+                const latestUncertainty = results[party].hdi_upper[lastIndex] - results[party].hdi_lower[lastIndex];
 
                 statCard.append('div')
                     .style('font-size', '0.75em')
                     .style('margin-top', '3px')
                     .style('opacity', '0.8')
-                    .text(`Uncertainty: ±${(meanUncertainty / 2).toFixed(1)}%`);
+                    .text(`Uncertainty: ±${(latestUncertainty / 2).toFixed(1)}%`);
             });
         }
 
@@ -1401,7 +1494,15 @@
                 const opacity = activeParties.has(party) ? 1 : 0.1;
                 d3.selectAll(`.area-${party}`).transition().duration(300).attr('opacity', activeParties.has(party) ? 0.2 : 0.02);
                 d3.selectAll(`.line-${party}`).transition().duration(300).attr('opacity', opacity);
-                d3.selectAll(`.dot-${party}`).transition().duration(300).attr('opacity', activeParties.has(party) ? 0.6 : 0.1);
+                
+                // For dots, respect the base opacity from pollster rating
+                d3.selectAll(`.dot-${party}`).transition().duration(300).attr('opacity', function() {
+                    if (activeParties.has(party)) {
+                        const baseOpacity = d3.select(this).attr('data-base-opacity');
+                        return baseOpacity ? parseFloat(baseOpacity) : 0.6;
+                    }
+                    return 0.1;
+                });
             });
         }
 
