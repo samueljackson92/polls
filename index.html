@@ -759,7 +759,7 @@
             <div class="card" id="standings">
                 <h2>Current Standings</h2>
                 <p style="margin-bottom: 15px; color: #333; line-height: 1.6;">
-                    The latest model estimates for each party's support, shown as the mean of the posterior distribution at the most recent time point. These values represent the model's best guess of current support levels, with uncertainty in the average shown for context. Parties are sorted by vote share.
+                    The latest model estimates for each party's support, shown as the mean of the posterior distribution at the most recent time point. These values represent the model's best guess of current support levels, with the change over the past 30 days and average uncertainty in the mean shown for context. Parties are sorted by vote share.
                 </p>
                 <div id="stats-grid"></div>
             </div>
@@ -1239,6 +1239,32 @@
                 statCard.append('div')
                     .attr('class', 'value')
                     .text(latestMean.toFixed(1) + '%');
+
+                // Calculate change from 30 days ago
+                const latestDate = data[data.length - 1].date;
+                const thirtyDaysAgo = new Date(latestDate.getTime() - 30 * 24 * 60 * 60 * 1000);
+                
+                // Find the index closest to 30 days ago
+                let comparisonIndex = 0;
+                let minDiff = Math.abs(data[0].date - thirtyDaysAgo);
+                for (let i = 1; i < data.length; i++) {
+                    const diff = Math.abs(data[i].date - thirtyDaysAgo);
+                    if (diff < minDiff) {
+                        minDiff = diff;
+                        comparisonIndex = i;
+                    }
+                }
+                
+                const previousMean = results[party].mean[comparisonIndex];
+                const change = latestMean - previousMean;
+                const changeSign = change > 0 ? '+' : '';
+                const arrow = change > 0 ? '↑' : (change < 0 ? '↓' : '');
+                
+                statCard.append('div')
+                    .style('font-size', '0.75em')
+                    .style('margin-top', '3px')
+                    .style('font-weight', '600')
+                    .text(`${arrow} ${changeSign}${change.toFixed(1)}% (30d)`);
 
                 statCard.append('div')
                     .style('font-size', '0.8em')
