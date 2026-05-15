@@ -39,7 +39,7 @@ def no_pooling_model(df: pd.DataFrame):
     print(f"Number of unique months in data: {num_months}")
 
     # Create B-spline basis matrix using patsy
-    num_knots = num_months  # heuristic: one knot every 3 months
+    num_knots = num_months
     knots = np.linspace(x.min(), x.max(), num_knots + 2)[1:-1]  # interior knots
     B = dmatrix(
         f"bs(x, knots=knots, degree=3, include_intercept=True) - 1",
@@ -67,7 +67,7 @@ def no_pooling_model(df: pd.DataFrame):
     with pm.Model() as spline_model:
         # Prior on spline coefficients (random walk for smoothness) - separate for each party
         # Shape: (num_parties, num_basis)
-        sigma_coef = pm.HalfNormal("sigma_coef", sigma=1.0, shape=num_parties)
+        sigma_coef = pm.HalfNormal("sigma_coef", sigma=0.5, shape=num_parties)
         delta = pm.Normal(
             "delta", mu=0, sigma=sigma_coef[:, None], shape=(num_parties, num_basis)
         )
@@ -75,7 +75,7 @@ def no_pooling_model(df: pd.DataFrame):
 
         # Mean function for each party (underlying true support)
         # B @ coefs.T gives shape (n_obs, num_parties)
-        mu_true = pm.math.dot(B, coefs.T)
+        mu_true = pm.Deterministic("mu_true", pm.math.dot(B, coefs.T))
 
         # Hierarchical pollster bias: each pollster has a bias for each party
         # Hyperpriors for pollster bias
@@ -105,7 +105,7 @@ def no_pooling_model(df: pd.DataFrame):
     # Extract results for each party
     party_results = {}
     mu_samples = trace.posterior[
-        "mu"
+        "mu_true"
     ].values  # shape: (chains, draws, n_obs, num_parties)
     mu_samples = mu_samples.reshape(
         -1, n_obs, num_parties
@@ -133,6 +133,10 @@ def no_pooling_model(df: pd.DataFrame):
                 "std": float(bias_samples.std()),
                 "hdi": [float(x) for x in np.percentile(bias_samples, [2.5, 97.5])],
             }
+
+        # Count number of polls for this pollster
+        num_polls = int((df["pollster"] == pollster).sum())
+        pollster_biases[pollster]["num_polls"] = num_polls
 
         # Compute overall pollster bias (RMS across parties)
         party_biases = [pollster_biases[pollster][party]["mean"] for party in PARTIES]

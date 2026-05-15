@@ -813,6 +813,7 @@
                             <tr>
                                 <th>Pollster</th>
                                 <th>Rating</th>
+                                <th>Polls</th>
                                 <th>Overall Bias</th>
                                 <th>CON</th>
                                 <th>LAB</th>
@@ -1410,6 +1411,11 @@
                     ratingCell.text(rating);
                 }
                 
+                // Number of polls
+                row.append('td')
+                    .style('text-align', 'center')
+                    .text(biases.num_polls || '-');
+                
                 // Overall bias
                 row.append('td')
                     .style('text-align', 'center')
@@ -1512,7 +1518,7 @@
             }
 
             // Create CSV header
-            const headers = ['Pollster', 'Rating', 'Overall Bias (%)', 'CON', 'LAB', 'REF', 'LD', 'GRN', 'PC', 'SNP', 'OTH'];
+            const headers = ['Pollster', 'Rating', 'Polls', 'Overall Bias (%)', 'CON', 'LAB', 'REF', 'LD', 'GRN', 'PC', 'SNP', 'OTH'];
             const rows = [headers.join(',')];
 
             // Sort pollsters by rating and overall bias (same as table)
@@ -1530,6 +1536,7 @@
                 const row = [
                     escapeCSV(pollster),
                     biases.rating || 'N/A',
+                    biases.num_polls || '',
                     biases.overall_bias != null ? biases.overall_bias.toFixed(2) : '',
                     biases.conservative?.mean != null ? biases.conservative.mean.toFixed(1) : '',
                     biases.labour?.mean != null ? biases.labour.mean.toFixed(1) : '',
