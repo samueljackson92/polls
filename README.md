@@ -90,12 +90,9 @@ Wikipedia aggregates polls from various organizations including YouGov, Ipsos MO
 
 Potential enhancements for future iterations:
 
-- **Hierarchical modeling** to account for pollster house effects
 - **Multinomial regression** to ensure vote shares sum to 100%
 - **Predictive modeling** with proper forecasting methodology
-- **Poll quality weighting** based on sample size, methodology, and pollster track record
 - **Temporal correlation modeling** between parties
-- **Automated updates** with scheduled scraping and model refitting
 
 ## License
 
