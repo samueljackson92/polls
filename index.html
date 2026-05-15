@@ -264,6 +264,8 @@
             color: #666;
             font-size: 0.9em;
             margin-top: 10px;
+            margin-bottom: 15px;
+            padding: 10px 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
@@ -747,12 +749,18 @@
         <div class="dashboard">
             <div class="card" id="trends">
                 <h2>Current Polling Trends</h2>
+                <p style="margin-bottom: 15px; color: #333; line-height: 1.6;">
+                    This chart shows the estimated underlying support for each party over time. The solid lines represent the model's best estimate of true support after accounting for pollster biases and sampling noise. Shaded regions show 95% credible intervals—the wider the band, the greater the uncertainty. Individual poll results are shown as scattered points, color-coded by party. Click legend items to show or hide parties.
+                </p>
                 <div id="main-chart"></div>
                 <div class="legend" id="legend"></div>
             </div>
 
             <div class="card" id="standings">
                 <h2>Current Standings</h2>
+                <p style="margin-bottom: 15px; color: #333; line-height: 1.6;">
+                    The latest model estimates for each party's support, shown as the mean of the posterior distribution at the most recent time point. These values represent the model's best guess of current support levels, with uncertainty in the average shown for context. Parties are sorted by vote share.
+                </p>
                 <div id="stats-grid"></div>
             </div>
 
@@ -768,6 +776,9 @@
                         Export CSV
                     </button>
                 </div>
+                <p style="margin-bottom: 15px; color: #333; line-height: 1.6;">
+                    All individual polls used in the model, sorted by date (most recent first). Each pollster is assigned a rating based on their estimated systematic bias. The raw poll results are shown alongside their ratings, allowing you to compare different pollsters' reported values for the same time period.
+                </p>
                 <div class="poll-count" id="poll-count"></div>
                 <div class="polls-table-container">
                     <table class="polls-table" id="polls-table">
@@ -806,6 +817,9 @@
                         Export CSV
                     </button>
                 </div>
+                <p style="margin-bottom: 15px; color: #333; line-height: 1.6;">
+                    The Bayesian model estimates systematic biases for each polling organization. These represent consistent tendencies to over- or under-estimate party support relative to the underlying trend. Pollsters with larger biases systematically report different values than the trend suggests, while those with smaller biases cluster more tightly around it. The overall bias (RMS across parties) determines the rating from A+ to F.
+                </p>
                 <div class="poll-count" id="pollster-count"></div>
                 <div class="polls-table-container">
                     <table class="polls-table" id="pollster-ratings-table">
@@ -1242,7 +1256,7 @@
                     .style('font-size', '0.75em')
                     .style('margin-top', '3px')
                     .style('opacity', '0.8')
-                    .text(`Avg. uncertainty: ±${(meanUncertainty / 2).toFixed(1)}%`);
+                    .text(`Uncertainty: ±${(meanUncertainty / 2).toFixed(1)}%`);
             });
         }
 
