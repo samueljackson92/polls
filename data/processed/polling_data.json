@@ -1484,7 +1484,7 @@
   {
     "dates":"2\u20133 Feb",
     "pollster":"YouGov",
-    "client":"Sky News[383]",
+    "client":"Sky News[384]",
     "area":"GB",
     "sample_size":2465.0,
     "labour":24.0,
@@ -2282,7 +2282,7 @@
   {
     "dates":"26\u201327 Mar",
     "pollster":"BMG Research",
-    "client":"The i Paper[340]",
+    "client":"The i Paper[341]",
     "area":"GB",
     "sample_size":1544.0,
     "labour":26.0,
@@ -2301,7 +2301,7 @@
   {
     "dates":"21\u201328 Mar",
     "pollster":"Find Out Now\/Electoral Calculus(MRP)",
-    "client":"PLMR[338]",
+    "client":"PLMR[339]",
     "area":"GB",
     "sample_size":5180.0,
     "labour":24.0,
@@ -4695,7 +4695,7 @@
   {
     "dates":"21 Aug\u20131 Sep",
     "pollster":"Survation(MRP)",
-    "client":"38 Degrees[211]",
+    "client":"38 Degrees[212]",
     "area":"UK",
     "sample_size":8546.0,
     "labour":25.0,
@@ -4904,7 +4904,7 @@
   {
     "dates":"8 Aug \u2013 15 Sep",
     "pollster":"More in Common(MRP)",
-    "client":"The Times[199]",
+    "client":"The Times[200]",
     "area":"GB",
     "sample_size":19520.0,
     "labour":21.0,
@@ -8548,6 +8548,25 @@
     "lead":6.0,
     "year":2026,
     "date":"2026-05-19"
+  },
+  {
+    "dates":"15\u201320 May",
+    "pollster":"Ipsos",
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":1137.0,
+    "labour":20.0,
+    "conservative":19.0,
+    "reform":27.0,
+    "liberal_democrats":12.0,
+    "green":14.0,
+    "snp":null,
+    "plaid_cymru":null,
+    "rb":"TBA",
+    "others":8.0,
+    "lead":7.0,
+    "year":2026,
+    "date":"2026-05-20"
   },
   {
     "dates":"20\u201321 May",
