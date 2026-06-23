@@ -2,6 +2,7 @@
   {
     "dates":"11\u201312 Jul",
     "pollster":"We Think",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2005.0,
@@ -15,12 +16,12 @@
     "rb":null,
     "others":3.0,
     "lead":19.0,
-    "year":2024,
     "date":"2024-07-12"
   },
   {
     "dates":"25\u201326 Jul",
     "pollster":"We Think",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2012.0,
@@ -34,12 +35,12 @@
     "rb":null,
     "others":4.0,
     "lead":14.0,
-    "year":2024,
     "date":"2024-07-26"
   },
   {
     "dates":"30 Jul\u20135 Aug",
     "pollster":"Stonehaven",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2048.0,
@@ -53,12 +54,12 @@
     "rb":null,
     "others":7.0,
     "lead":11.0,
-    "year":2024,
     "date":"2024-08-05"
   },
   {
     "dates":"5\u20137 Aug",
     "pollster":"BMG Research",
+    "year":2024,
     "client":"i",
     "area":"GB",
     "sample_size":1523.0,
@@ -72,12 +73,12 @@
     "rb":null,
     "others":2.0,
     "lead":9.0,
-    "year":2024,
     "date":"2024-08-07"
   },
   {
     "dates":"7\u20138 Aug",
     "pollster":"We Think",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1278.0,
@@ -91,12 +92,12 @@
     "rb":null,
     "others":4.0,
     "lead":12.0,
-    "year":2024,
     "date":"2024-08-08"
   },
   {
     "dates":"29 Aug",
     "pollster":"BMG Research",
+    "year":2024,
     "client":"i",
     "area":"GB",
     "sample_size":1560.0,
@@ -110,12 +111,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-08-29"
   },
   {
     "dates":"10\u201312 Sep",
     "pollster":"More in Common",
+    "year":2024,
     "client":"Politico",
     "area":"GB",
     "sample_size":1542.0,
@@ -129,12 +130,12 @@
     "rb":null,
     "others":4.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-09-12"
   },
   {
     "dates":"18\u201319 Sep",
     "pollster":"Techne",
+    "year":2024,
     "client":"The Independent",
     "area":"UK",
     "sample_size":1641.0,
@@ -148,12 +149,12 @@
     "rb":null,
     "others":6.0,
     "lead":12.0,
-    "year":2024,
     "date":"2024-09-19"
   },
   {
     "dates":"18\u201323 Sep",
     "pollster":"Verian",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1258.0,
@@ -167,12 +168,12 @@
     "rb":null,
     "others":2.0,
     "lead":5.0,
-    "year":2024,
     "date":"2024-09-23"
   },
   {
     "dates":"24\u201325 Sep",
     "pollster":"More in Common",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2080.0,
@@ -186,12 +187,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-09-25"
   },
   {
     "dates":"25\u201326 Sep",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1638.0,
@@ -205,12 +206,12 @@
     "rb":null,
     "others":6.0,
     "lead":10.0,
-    "year":2024,
     "date":"2024-09-26"
   },
   {
     "dates":"2\u20133 Oct",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1643.0,
@@ -224,12 +225,12 @@
     "rb":null,
     "others":6.0,
     "lead":8.0,
-    "year":2024,
     "date":"2024-10-03"
   },
   {
     "dates":"2\u20133 Oct",
     "pollster":"BMG Research",
+    "year":2024,
     "client":"i",
     "area":"GB",
     "sample_size":1562.0,
@@ -243,12 +244,12 @@
     "rb":null,
     "others":1.0,
     "lead":5.0,
-    "year":2024,
     "date":"2024-10-03"
   },
   {
     "dates":"2\u20134 Oct",
     "pollster":"Opinium",
+    "year":2024,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1491.0,
@@ -262,12 +263,12 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
-    "year":2024,
     "date":"2024-10-04"
   },
   {
     "dates":"4\u20137 Oct",
     "pollster":"Deltapoll",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2108.0,
@@ -281,12 +282,12 @@
     "rb":null,
     "others":1.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-10-07"
   },
   {
     "dates":"5\u20137 Oct",
     "pollster":"More in Common",
+    "year":2024,
     "client":"Politico",
     "area":"GB",
     "sample_size":2023.0,
@@ -300,12 +301,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-10-07"
   },
   {
     "dates":"9\u201310 Oct",
     "pollster":"More in Common",
+    "year":2024,
     "client":"The Times",
     "area":"GB",
     "sample_size":2000.0,
@@ -319,12 +320,12 @@
     "rb":null,
     "others":1.0,
     "lead":null,
-    "year":2024,
     "date":"2024-10-10"
   },
   {
     "dates":"9\u201310 Oct",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1651.0,
@@ -338,12 +339,12 @@
     "rb":null,
     "others":7.0,
     "lead":5.0,
-    "year":2024,
     "date":"2024-10-10"
   },
   {
     "dates":"11\u201313 Oct",
     "pollster":"JL Partners",
+    "year":2024,
     "client":"The Telegraph",
     "area":"GB",
     "sample_size":2000.0,
@@ -357,12 +358,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-10-13"
   },
   {
     "dates":"16\u201317 Oct",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1636.0,
@@ -376,12 +377,12 @@
     "rb":null,
     "others":6.0,
     "lead":3.0,
-    "year":2024,
     "date":"2024-10-17"
   },
   {
     "dates":"16\u201318 Oct",
     "pollster":"Opinium",
+    "year":2024,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1565.0,
@@ -395,12 +396,12 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
-    "year":2024,
     "date":"2024-10-18"
   },
   {
     "dates":"23\u201324 Oct",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1644.0,
@@ -414,12 +415,12 @@
     "rb":null,
     "others":6.0,
     "lead":5.0,
-    "year":2024,
     "date":"2024-10-24"
   },
   {
     "dates":"30\u201331 Oct",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1632.0,
@@ -433,12 +434,12 @@
     "rb":null,
     "others":5.0,
     "lead":6.0,
-    "year":2024,
     "date":"2024-10-31"
   },
   {
     "dates":"30\u201331 Oct",
     "pollster":"BMG Research",
+    "year":2024,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1511.0,
@@ -452,12 +453,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-10-31"
   },
   {
     "dates":"30\u201331 Oct",
     "pollster":"Opinium",
+    "year":2024,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1548.0,
@@ -471,12 +472,12 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
-    "year":2024,
     "date":"2024-10-31"
   },
   {
     "dates":"30 Oct\u20131 Nov",
     "pollster":"More in Common",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2007.0,
@@ -490,12 +491,12 @@
     "rb":null,
     "others":3.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-11-01"
   },
   {
     "dates":"6\u20137 Nov",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1636.0,
@@ -509,12 +510,12 @@
     "rb":null,
     "others":6.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-11-07"
   },
   {
     "dates":"8\u201311 Nov",
     "pollster":"More in Common",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2007.0,
@@ -528,12 +529,12 @@
     "rb":null,
     "others":4.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-11-11"
   },
   {
     "dates":"11\u201313 Nov",
     "pollster":"Opinium",
+    "year":2024,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1646.0,
@@ -547,12 +548,12 @@
     "rb":null,
     "others":1.0,
     "lead":6.0,
-    "year":2024,
     "date":"2024-11-13"
   },
   {
     "dates":"13\u201314 Nov",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1643.0,
@@ -566,12 +567,12 @@
     "rb":null,
     "others":6.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-11-14"
   },
   {
     "dates":"13\u201314 Nov",
     "pollster":"JL Partners",
+    "year":2024,
     "client":"The Sun \/ Politico",
     "area":"GB",
     "sample_size":2024.0,
@@ -585,12 +586,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-11-14"
   },
   {
     "dates":"14\u201318 Nov",
     "pollster":"Deltapoll",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1749.0,
@@ -604,12 +605,12 @@
     "rb":null,
     "others":1.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-11-18"
   },
   {
     "dates":"20\u201321 Nov",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1632.0,
@@ -623,12 +624,12 @@
     "rb":null,
     "others":6.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-11-21"
   },
   {
     "dates":"19\u201321 Nov",
     "pollster":"More in Common",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2002.0,
@@ -642,12 +643,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2024,
     "date":"2024-11-21"
   },
   {
     "dates":"26\u201327 Nov",
     "pollster":"BMG Research",
+    "year":2024,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1531.0,
@@ -661,12 +662,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-11-27"
   },
   {
     "dates":"27 Nov",
     "pollster":"Find Out Now",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2316.0,
@@ -680,12 +681,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-11-27"
   },
   {
     "dates":"26\u201327 Nov",
     "pollster":"More in Common",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1972.0,
@@ -699,12 +700,12 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
-    "year":2024,
     "date":"2024-11-27"
   },
   {
     "dates":"27\u201328 Nov",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1648.0,
@@ -718,12 +719,12 @@
     "rb":null,
     "others":6.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-11-28"
   },
   {
     "dates":"27\u201329 Nov",
     "pollster":"Opinium",
+    "year":2024,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -737,12 +738,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-11-29"
   },
   {
     "dates":"29 Nov\u20132 Dec",
     "pollster":"More in Common",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2002.0,
@@ -756,12 +757,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-12-02"
   },
   {
     "dates":"4 Dec",
     "pollster":"Find Out Now",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2607.0,
@@ -775,12 +776,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-12-04"
   },
   {
     "dates":"5\u20136 Dec",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1644.0,
@@ -794,12 +795,12 @@
     "rb":null,
     "others":6.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-12-06"
   },
   {
     "dates":"6\u20139 Dec",
     "pollster":"Stonehaven(MRP)",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2072.0,
@@ -813,12 +814,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-12-09"
   },
   {
     "dates":"6\u201310 Dec",
     "pollster":"More in Common",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2432.0,
@@ -832,12 +833,12 @@
     "rb":null,
     "others":4.0,
     "lead":null,
-    "year":2024,
     "date":"2024-12-10"
   },
   {
     "dates":"11 Dec",
     "pollster":"Find Out Now",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2659.0,
@@ -851,12 +852,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-12-11"
   },
   {
     "dates":"11\u201312 Dec",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1634.0,
@@ -870,12 +871,12 @@
     "rb":null,
     "others":6.0,
     "lead":2.0,
-    "year":2024,
     "date":"2024-12-12"
   },
   {
     "dates":"12\u201316 Dec",
     "pollster":"Survation",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":2030.0,
@@ -889,12 +890,12 @@
     "rb":null,
     "others":2.0,
     "lead":5.0,
-    "year":2024,
     "date":"2024-12-16"
   },
   {
     "dates":"31 Oct \u2013 16 Dec",
     "pollster":"More in Common(MRP)",
+    "year":2024,
     "client":"N\/A",
     "area":"GB",
     "sample_size":11024.0,
@@ -908,12 +909,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-12-16"
   },
   {
     "dates":"18\u201319 Dec",
     "pollster":"Techne",
+    "year":2024,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1642.0,
@@ -927,12 +928,12 @@
     "rb":null,
     "others":5.0,
     "lead":1.0,
-    "year":2024,
     "date":"2024-12-19"
   },
   {
     "dates":"18\u201320 Dec",
     "pollster":"Opinium",
+    "year":2024,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1472.0,
@@ -946,12 +947,12 @@
     "rb":null,
     "others":2.0,
     "lead":6.0,
-    "year":2024,
     "date":"2024-12-20"
   },
   {
     "dates":"19\u201323 Dec",
     "pollster":"Deltapoll",
+    "year":2024,
     "client":"The Mirror",
     "area":"GB",
     "sample_size":1552.0,
@@ -965,12 +966,12 @@
     "rb":null,
     "others":1.0,
     "lead":4.0,
-    "year":2024,
     "date":"2024-12-23"
   },
   {
     "dates":"30 Dec\u20133 Jan",
     "pollster":"Deltapoll",
+    "year":2025,
     "client":"Mail on Sunday",
     "area":"GB",
     "sample_size":1532.0,
@@ -984,12 +985,12 @@
     "rb":null,
     "others":1.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-01-03"
   },
   {
     "dates":"4\u20136 Jan",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1207.0,
@@ -1003,12 +1004,12 @@
     "rb":null,
     "others":1.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-06"
   },
   {
     "dates":"6\u20138 Jan",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2011.0,
@@ -1022,12 +1023,12 @@
     "rb":null,
     "others":2.0,
     "lead":null,
-    "year":2025,
     "date":"2025-01-08"
   },
   {
     "dates":"8 Jan",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2076.0,
@@ -1041,12 +1042,12 @@
     "rb":null,
     "others":2.0,
     "lead":null,
-    "year":2025,
     "date":"2025-01-08"
   },
   {
     "dates":"8\u201310 Jan",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -1060,12 +1061,12 @@
     "rb":null,
     "others":2.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-01-10"
   },
   {
     "dates":"10\u201313 Jan",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1587.0,
@@ -1079,12 +1080,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-13"
   },
   {
     "dates":"12\u201313 Jan",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times",
     "area":"GB",
     "sample_size":2279.0,
@@ -1098,12 +1099,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-13"
   },
   {
     "dates":"10\u201314 Jan",
     "pollster":"JL Partners",
+    "year":2025,
     "client":"The Sunday Times",
     "area":"GB",
     "sample_size":2007.0,
@@ -1117,12 +1118,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-14"
   },
   {
     "dates":"15 Jan",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2386.0,
@@ -1136,12 +1137,12 @@
     "rb":null,
     "others":2.0,
     "lead":null,
-    "year":2025,
     "date":"2025-01-15"
   },
   {
     "dates":"15\u201316 Jan",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1624.0,
@@ -1155,12 +1156,12 @@
     "rb":null,
     "others":5.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-16"
   },
   {
     "dates":"17\u201320 Jan",
     "pollster":"Deltapoll",
+    "year":2025,
     "client":"Institute for Government",
     "area":"GB",
     "sample_size":1500.0,
@@ -1174,12 +1175,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-01-20"
   },
   {
     "dates":"19\u201320 Jan",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times",
     "area":"GB",
     "sample_size":2466.0,
@@ -1193,12 +1194,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-01-20"
   },
   {
     "dates":"16\u201320 Jan",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5251.0,
@@ -1212,12 +1213,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-01-20"
   },
   {
     "dates":"17\u201320 Jan",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2016.0,
@@ -1231,12 +1232,12 @@
     "rb":null,
     "others":3.0,
     "lead":null,
-    "year":2025,
     "date":"2025-01-20"
   },
   {
     "dates":"22 Jan",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2380.0,
@@ -1250,12 +1251,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-01-22"
   },
   {
     "dates":"22\u201323 Jan",
     "pollster":"Whitestone Insight",
+    "year":2025,
     "client":"Daily Express",
     "area":"GB",
     "sample_size":2012.0,
@@ -1269,12 +1270,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-23"
   },
   {
     "dates":"22\u201323 Jan",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1643.0,
@@ -1288,12 +1289,12 @@
     "rb":null,
     "others":5.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-23"
   },
   {
     "dates":"22\u201324 Jan",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -1307,12 +1308,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-24"
   },
   {
     "dates":"24\u201327 Jan",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2009.0,
@@ -1326,12 +1327,12 @@
     "rb":null,
     "others":3.0,
     "lead":null,
-    "year":2025,
     "date":"2025-01-27"
   },
   {
     "dates":"26\u201327 Jan",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times",
     "area":"GB",
     "sample_size":2523.0,
@@ -1345,12 +1346,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-01-27"
   },
   {
     "dates":"22\u201329 Jan",
     "pollster":"Find Out Now\/Electoral Calculus(MRP)",
+    "year":2025,
     "client":"PLMR",
     "area":"GB",
     "sample_size":5743.0,
@@ -1364,12 +1365,12 @@
     "rb":null,
     "others":6.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-01-29"
   },
   {
     "dates":"28\u201329 Jan",
     "pollster":"Survation",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1670.0,
@@ -1383,12 +1384,12 @@
     "rb":null,
     "others":4.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-01-29"
   },
   {
     "dates":"28\u201329 Jan",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1514.0,
@@ -1402,12 +1403,12 @@
     "rb":null,
     "others":1.0,
     "lead":null,
-    "year":2025,
     "date":"2025-01-29"
   },
   {
     "dates":"29 Jan",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2487.0,
@@ -1421,12 +1422,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-01-29"
   },
   {
     "dates":"29\u201330 Jan",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1633.0,
@@ -1440,12 +1441,12 @@
     "rb":null,
     "others":5.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-01-30"
   },
   {
     "dates":"31 Jan\u20132 Feb",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1200.0,
@@ -1459,13 +1460,13 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-02"
   },
   {
     "dates":"2\u20133 Feb",
     "pollster":"YouGov",
-    "client":"Sky News[407]",
+    "year":2025,
+    "client":"Sky News[408]",
     "area":"GB",
     "sample_size":2465.0,
     "labour":24.0,
@@ -1478,12 +1479,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-03"
   },
   {
     "dates":"31 Jan\u20133 Feb",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2044.0,
@@ -1497,12 +1498,12 @@
     "rb":null,
     "others":3.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-02-03"
   },
   {
     "dates":"5 Feb",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2487.0,
@@ -1516,12 +1517,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-02-05"
   },
   {
     "dates":"5\u20136 Feb",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1645.0,
@@ -1535,12 +1536,12 @@
     "rb":null,
     "others":5.0,
     "lead":null,
-    "year":2025,
     "date":"2025-02-06"
   },
   {
     "dates":"5\u20137 Feb",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1493.0,
@@ -1554,12 +1555,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-07"
   },
   {
     "dates":"7\u201310 Feb",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2005.0,
@@ -1573,12 +1574,12 @@
     "rb":null,
     "others":3.0,
     "lead":null,
-    "year":2025,
     "date":"2025-02-10"
   },
   {
     "dates":"9\u201310 Feb",
     "pollster":"YouGov",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2419.0,
@@ -1592,12 +1593,12 @@
     "rb":null,
     "others":1.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-10"
   },
   {
     "dates":"12 Feb",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":3421.0,
@@ -1611,12 +1612,12 @@
     "rb":null,
     "others":2.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-02-12"
   },
   {
     "dates":"12\u201313 Feb",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1637.0,
@@ -1630,12 +1631,12 @@
     "rb":null,
     "others":5.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-13"
   },
   {
     "dates":"13\u201317 Feb",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5099.0,
@@ -1649,12 +1650,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-02-17"
   },
   {
     "dates":"16\u201317 Feb",
     "pollster":"YouGov",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2436.0,
@@ -1668,12 +1669,12 @@
     "rb":null,
     "others":1.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-02-17"
   },
   {
     "dates":"14\u201318 Feb",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":4101.0,
@@ -1687,12 +1688,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-18"
   },
   {
     "dates":"19 Feb",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2393.0,
@@ -1706,12 +1707,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-02-19"
   },
   {
     "dates":"19\u201320 Feb",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1639.0,
@@ -1725,12 +1726,12 @@
     "rb":null,
     "others":5.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-20"
   },
   {
     "dates":"19\u201321 Feb",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -1744,12 +1745,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-02-21"
   },
   {
     "dates":"21\u201324 Feb",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2013.0,
@@ -1763,12 +1764,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-24"
   },
   {
     "dates":"23\u201324 Feb",
     "pollster":"YouGov",
+    "year":2025,
     "client":"Sky News \/ The Times",
     "area":"GB",
     "sample_size":2415.0,
@@ -1782,12 +1783,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-24"
   },
   {
     "dates":"25\u201326 Feb",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1586.0,
@@ -1801,12 +1802,12 @@
     "rb":null,
     "others":1.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-26"
   },
   {
     "dates":"26 Feb",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":3363.0,
@@ -1820,12 +1821,12 @@
     "rb":null,
     "others":1.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-02-26"
   },
   {
     "dates":"26\u201327 Feb",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1643.0,
@@ -1839,12 +1840,12 @@
     "rb":null,
     "others":4.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-02-27"
   },
   {
     "dates":"26\u201328 Feb",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1008.0,
@@ -1858,12 +1859,12 @@
     "rb":null,
     "others":5.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-02-28"
   },
   {
     "dates":"28 Feb\u20132 Mar",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2010.0,
@@ -1877,12 +1878,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-03-02"
   },
   {
     "dates":"1\u20132 Mar",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1215.0,
@@ -1896,12 +1897,12 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-03-02"
   },
   {
     "dates":"2\u20133 Mar",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times",
     "area":"GB",
     "sample_size":2222.0,
@@ -1915,12 +1916,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-03"
   },
   {
     "dates":"5 Mar",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2670.0,
@@ -1934,12 +1935,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-05"
   },
   {
     "dates":"5\u20136 Mar",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1632.0,
@@ -1953,12 +1954,12 @@
     "rb":null,
     "others":4.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-03-06"
   },
   {
     "dates":"5\u20137 Mar",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1498.0,
@@ -1972,12 +1973,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-07"
   },
   {
     "dates":"6\u20139 Mar",
     "pollster":"JL Partners",
+    "year":2025,
     "client":"The Sun",
     "area":"GB",
     "sample_size":2012.0,
@@ -1991,12 +1992,12 @@
     "rb":null,
     "others":3.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-03-09"
   },
   {
     "dates":"7\u201310 Mar",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2041.0,
@@ -2010,12 +2011,12 @@
     "rb":null,
     "others":2.0,
     "lead":null,
-    "year":2025,
     "date":"2025-03-10"
   },
   {
     "dates":"9\u201310 Mar",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2291.0,
@@ -2029,12 +2030,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-10"
   },
   {
     "dates":"12 Mar",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2686.0,
@@ -2048,12 +2049,12 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-03-12"
   },
   {
     "dates":"12\u201313 Mar",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1638.0,
@@ -2067,12 +2068,12 @@
     "rb":null,
     "others":4.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-03-13"
   },
   {
     "dates":"13\u201317 Mar",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5111.0,
@@ -2086,12 +2087,12 @@
     "rb":null,
     "others":4.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-03-17"
   },
   {
     "dates":"14\u201317 Mar",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2432.0,
@@ -2105,12 +2106,12 @@
     "rb":null,
     "others":4.0,
     "lead":null,
-    "year":2025,
     "date":"2025-03-17"
   },
   {
     "dates":"14\u201317 Mar",
     "pollster":"Deltapoll",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1974.0,
@@ -2124,12 +2125,12 @@
     "rb":null,
     "others":2.0,
     "lead":null,
-    "year":2025,
     "date":"2025-03-17"
   },
   {
     "dates":"16\u201317 Mar",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2315.0,
@@ -2143,12 +2144,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-03-17"
   },
   {
     "dates":"19 Mar",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2770.0,
@@ -2162,12 +2163,12 @@
     "rb":null,
     "others":2.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-03-19"
   },
   {
     "dates":"19\u201320 Mar",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1644.0,
@@ -2181,12 +2182,12 @@
     "rb":null,
     "others":4.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-03-20"
   },
   {
     "dates":"19\u201321 Mar",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2078.0,
@@ -2200,12 +2201,12 @@
     "rb":null,
     "others":3.0,
     "lead":null,
-    "year":2025,
     "date":"2025-03-21"
   },
   {
     "dates":"22\u201324 Mar",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2432.0,
@@ -2219,12 +2220,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-24"
   },
   {
     "dates":"23\u201324 Mar",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2333.0,
@@ -2238,12 +2239,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-24"
   },
   {
     "dates":"26 Mar",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2745.0,
@@ -2257,13 +2258,13 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-03-26"
   },
   {
     "dates":"26\u201327 Mar",
     "pollster":"BMG Research",
-    "client":"The i Paper[364]",
+    "year":2025,
+    "client":"The i Paper[365]",
     "area":"GB",
     "sample_size":1544.0,
     "labour":26.0,
@@ -2276,12 +2277,12 @@
     "rb":null,
     "others":1.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-03-27"
   },
   {
     "dates":"26\u201327 Mar",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1642.0,
@@ -2295,13 +2296,13 @@
     "rb":null,
     "others":4.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-27"
   },
   {
     "dates":"21\u201328 Mar",
     "pollster":"Find Out Now\/Electoral Calculus(MRP)",
-    "client":"PLMR[362]",
+    "year":2025,
+    "client":"PLMR[363]",
     "area":"GB",
     "sample_size":5180.0,
     "labour":24.0,
@@ -2314,12 +2315,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-03-28"
   },
   {
     "dates":"26\u201328 Mar",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -2333,12 +2334,12 @@
     "rb":null,
     "others":2.0,
     "lead":null,
-    "year":2025,
     "date":"2025-03-28"
   },
   {
     "dates":"28\u201331 Mar",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2081.0,
@@ -2352,12 +2353,12 @@
     "rb":null,
     "others":4.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-31"
   },
   {
     "dates":"30\u201331 Mar",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2392.0,
@@ -2371,12 +2372,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-03-31"
   },
   {
     "dates":"14 Mar\u20131 Apr",
     "pollster":"More in Common (MRP)",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":16176.0,
@@ -2390,12 +2391,12 @@
     "rb":null,
     "others":4.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-01"
   },
   {
     "dates":"2 Apr",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2768.0,
@@ -2409,12 +2410,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-04-02"
   },
   {
     "dates":"2\u20133 Apr",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1631.0,
@@ -2428,12 +2429,12 @@
     "rb":null,
     "others":5.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-03"
   },
   {
     "dates":"4\u20136 Apr",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1250.0,
@@ -2447,12 +2448,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-04-06"
   },
   {
     "dates":"4\u20137 Apr",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2058.0,
@@ -2466,12 +2467,12 @@
     "rb":null,
     "others":1.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-07"
   },
   {
     "dates":"6\u20137 Apr",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2402.0,
@@ -2485,12 +2486,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-04-07"
   },
   {
     "dates":"9 Apr",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2546.0,
@@ -2504,12 +2505,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-04-09"
   },
   {
     "dates":"9\u201310 Apr",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1644.0,
@@ -2523,12 +2524,12 @@
     "rb":null,
     "others":5.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-10"
   },
   {
     "dates":"9\u201311 Apr",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -2542,12 +2543,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-04-11"
   },
   {
     "dates":"11\u201314 Apr",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2277.0,
@@ -2561,12 +2562,12 @@
     "rb":null,
     "others":4.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-14"
   },
   {
     "dates":"13\u201314 Apr",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2399.0,
@@ -2580,12 +2581,12 @@
     "rb":null,
     "others":2.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-04-14"
   },
   {
     "dates":"10\u201314 Apr",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5263.0,
@@ -2599,12 +2600,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-04-14"
   },
   {
     "dates":"8\u201314 Apr",
     "pollster":"Verian",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1285.0,
@@ -2618,12 +2619,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-04-14"
   },
   {
     "dates":"11\u201314 Apr",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1585.0,
@@ -2637,12 +2638,12 @@
     "rb":null,
     "others":4.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-14"
   },
   {
     "dates":"16 Apr",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2288.0,
@@ -2656,12 +2657,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-04-16"
   },
   {
     "dates":"17\u201321 Apr",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2004.0,
@@ -2675,12 +2676,12 @@
     "rb":null,
     "others":4.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-04-21"
   },
   {
     "dates":"21\u201322 Apr",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2012.0,
@@ -2694,12 +2695,12 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-04-22"
   },
   {
     "dates":"23 Apr",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2139.0,
@@ -2713,12 +2714,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-04-23"
   },
   {
     "dates":"23\u201324 Apr",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1642.0,
@@ -2732,12 +2733,12 @@
     "rb":null,
     "others":5.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-24"
   },
   {
     "dates":"23\u201325 Apr",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -2751,12 +2752,12 @@
     "rb":null,
     "others":2.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-25"
   },
   {
     "dates":"25\u201327 Apr",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2009.0,
@@ -2770,12 +2771,12 @@
     "rb":null,
     "others":4.0,
     "lead":null,
-    "year":2025,
     "date":"2025-04-27"
   },
   {
     "dates":"27\u201328 Apr",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2214.0,
@@ -2789,12 +2790,12 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-04-28"
   },
   {
     "dates":"30 Apr",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1990.0,
@@ -2808,31 +2809,12 @@
     "rb":null,
     "others":3.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-04-30"
   },
   {
     "dates":"30 Apr\u20132 May",
-    "pollster":"Opinium",
-    "client":"The Observer",
-    "area":"GB",
-    "sample_size":2050.0,
-    "labour":26.0,
-    "conservative":19.0,
-    "reform":27.0,
-    "liberal_democrats":13.0,
-    "green":9.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":2.0,
-    "lead":1.0,
-    "year":2025,
-    "date":"2025-05-02"
-  },
-  {
-    "dates":"30 Apr\u20132 May",
     "pollster":"Survation",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1056.0,
@@ -2846,12 +2828,31 @@
     "rb":null,
     "others":3.0,
     "lead":null,
+    "date":"2025-05-02"
+  },
+  {
+    "dates":"30 Apr\u20132 May",
+    "pollster":"Opinium",
     "year":2025,
+    "client":"The Observer",
+    "area":"GB",
+    "sample_size":2050.0,
+    "labour":26.0,
+    "conservative":19.0,
+    "reform":27.0,
+    "liberal_democrats":13.0,
+    "green":9.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":2.0,
+    "lead":1.0,
     "date":"2025-05-02"
   },
   {
     "dates":"3\u20134 May",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2212.0,
@@ -2865,12 +2866,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-05-04"
   },
   {
     "dates":"2\u20135 May",
     "pollster":"Survation",
+    "year":2025,
     "client":"True North Advisors",
     "area":"UK",
     "sample_size":2032.0,
@@ -2884,12 +2885,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-05-05"
   },
   {
     "dates":"5\u20136 May",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2187.0,
@@ -2903,12 +2904,12 @@
     "rb":null,
     "others":1.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-05-06"
   },
   {
     "dates":"7 May",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2210.0,
@@ -2922,12 +2923,31 @@
     "rb":null,
     "others":1.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-05-07"
+  },
+  {
+    "dates":"7\u20138 May",
+    "pollster":"Techne",
+    "year":2025,
+    "client":"N\/A",
+    "area":"UK",
+    "sample_size":1635.0,
+    "labour":23.0,
+    "conservative":19.0,
+    "reform":28.0,
+    "liberal_democrats":14.0,
+    "green":8.0,
+    "snp":3.0,
+    "plaid_cymru":null,
+    "rb":null,
+    "others":5.0,
+    "lead":5.0,
+    "date":"2025-05-08"
   },
   {
     "dates":"6\u20138 May",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1525.0,
@@ -2941,31 +2961,12 @@
     "rb":null,
     "others":2.0,
     "lead":10.0,
-    "year":2025,
-    "date":"2025-05-08"
-  },
-  {
-    "dates":"7\u20138 May",
-    "pollster":"Techne",
-    "client":"N\/A",
-    "area":"UK",
-    "sample_size":1635.0,
-    "labour":23.0,
-    "conservative":19.0,
-    "reform":28.0,
-    "liberal_democrats":14.0,
-    "green":8.0,
-    "snp":3.0,
-    "plaid_cymru":null,
-    "rb":null,
-    "others":5.0,
-    "lead":5.0,
-    "year":2025,
     "date":"2025-05-08"
   },
   {
     "dates":"9\u201311 May",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1250.0,
@@ -2979,12 +2980,12 @@
     "rb":null,
     "others":2.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-05-11"
   },
   {
     "dates":"10\u201312 May",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2094.0,
@@ -2998,12 +2999,12 @@
     "rb":null,
     "others":1.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-05-12"
   },
   {
     "dates":"11\u201312 May",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2310.0,
@@ -3017,12 +3018,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-05-12"
   },
   {
     "dates":"14 May",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2557.0,
@@ -3036,12 +3037,12 @@
     "rb":null,
     "others":2.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-05-14"
   },
   {
     "dates":"14\u201315 May",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1645.0,
@@ -3055,12 +3056,12 @@
     "rb":null,
     "others":5.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-05-15"
   },
   {
     "dates":"14\u201316 May",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -3074,12 +3075,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-05-16"
   },
   {
     "dates":"16\u201319 May",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2090.0,
@@ -3093,12 +3094,12 @@
     "rb":null,
     "others":1.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-05-19"
   },
   {
     "dates":"18\u201319 May",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2222.0,
@@ -3112,12 +3113,12 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-05-19"
   },
   {
     "dates":"21 May",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2501.0,
@@ -3131,12 +3132,12 @@
     "rb":null,
     "others":2.0,
     "lead":11.0,
-    "year":2025,
     "date":"2025-05-21"
   },
   {
     "dates":"21\u201322 May",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1641.0,
@@ -3150,12 +3151,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-05-22"
   },
   {
     "dates":"23\u201326 May",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2000.0,
@@ -3169,12 +3170,12 @@
     "rb":null,
     "others":3.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-05-26"
   },
   {
     "dates":"26\u201327 May",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2013.0,
@@ -3188,12 +3189,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-05-27"
   },
   {
     "dates":"28 May",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2447.0,
@@ -3207,12 +3208,12 @@
     "rb":null,
     "others":2.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-05-28"
   },
   {
     "dates":"28\u201329 May",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1647.0,
@@ -3226,12 +3227,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-05-29"
   },
   {
     "dates":"28\u201329 May",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1510.0,
@@ -3245,12 +3246,12 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-05-29"
   },
   {
     "dates":"28\u201330 May",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -3264,12 +3265,12 @@
     "rb":null,
     "others":2.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-05-30"
   },
   {
     "dates":"29 May\u20132 Jun",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5147.0,
@@ -3283,12 +3284,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-06-02"
   },
   {
     "dates":"30 May\u20132 Jun",
     "pollster":"Survation",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":916.0,
@@ -3302,12 +3303,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-06-02"
   },
   {
     "dates":"30 May\u20132 Jun",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2016.0,
@@ -3321,12 +3322,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-06-02"
   },
   {
     "dates":"1\u20132 Jun",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2240.0,
@@ -3340,12 +3341,12 @@
     "rb":null,
     "others":2.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-06-02"
   },
   {
     "dates":"30 May\u20134 Jun",
     "pollster":"Ipsos",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1180.0,
@@ -3359,12 +3360,12 @@
     "rb":null,
     "others":1.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-06-04"
   },
   {
     "dates":"4 Jun",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1962.0,
@@ -3378,12 +3379,12 @@
     "rb":null,
     "others":2.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-06-04"
   },
   {
     "dates":"4\u20135 Jun",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1628.0,
@@ -3397,12 +3398,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-06-05"
   },
   {
     "dates":"6\u20138 Jun",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1260.0,
@@ -3416,12 +3417,12 @@
     "rb":null,
     "others":2.0,
     "lead":11.0,
-    "year":2025,
     "date":"2025-06-08"
   },
   {
     "dates":"8\u20139 Jun",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2196.0,
@@ -3435,12 +3436,12 @@
     "rb":null,
     "others":1.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-06-09"
   },
   {
     "dates":"6\u20139 Jun",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2073.0,
@@ -3454,31 +3455,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-06-09"
-  },
-  {
-    "dates":"11 Jun",
-    "pollster":"Find Out Now",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2651.0,
-    "labour":24.0,
-    "conservative":16.0,
-    "reform":30.0,
-    "liberal_democrats":13.0,
-    "green":11.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":2.0,
-    "lead":6.0,
-    "year":2025,
-    "date":"2025-06-11"
   },
   {
     "dates":"10\u201311 Jun",
     "pollster":"Survation",
+    "year":2025,
     "client":"Rogan Productions",
     "area":"UK",
     "sample_size":2010.0,
@@ -3492,12 +3474,31 @@
     "rb":null,
     "others":4.0,
     "lead":2.0,
+    "date":"2025-06-11"
+  },
+  {
+    "dates":"11 Jun",
+    "pollster":"Find Out Now",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2651.0,
+    "labour":24.0,
+    "conservative":16.0,
+    "reform":30.0,
+    "liberal_democrats":13.0,
+    "green":11.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":2.0,
+    "lead":6.0,
     "date":"2025-06-11"
   },
   {
     "dates":"11\u201313 Jun",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -3511,31 +3512,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-06-13"
-  },
-  {
-    "dates":"13\u201316 Jun",
-    "pollster":"More in Common",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2032.0,
-    "labour":21.0,
-    "conservative":22.0,
-    "reform":29.0,
-    "liberal_democrats":13.0,
-    "green":9.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":4.0,
-    "lead":7.0,
-    "year":2025,
-    "date":"2025-06-16"
   },
   {
     "dates":"15\u201316 Jun",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2255.0,
@@ -3549,12 +3531,31 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
+    "date":"2025-06-16"
+  },
+  {
+    "dates":"13\u201316 Jun",
+    "pollster":"More in Common",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2032.0,
+    "labour":21.0,
+    "conservative":22.0,
+    "reform":29.0,
+    "liberal_democrats":13.0,
+    "green":9.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":4.0,
+    "lead":7.0,
     "date":"2025-06-16"
   },
   {
     "dates":"10\u201317 Jun",
     "pollster":"Find Out Now\/Electoral Calculus(MRP)",
+    "year":2025,
     "client":"PLMR",
     "area":"GB",
     "sample_size":5444.0,
@@ -3568,12 +3569,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-06-17"
   },
   {
     "dates":"29 May\u201318 Jun",
     "pollster":"YouGov(MRP)",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":11500.0,
@@ -3587,12 +3588,12 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-06-18"
   },
   {
     "dates":"29 May\u201318 Jun",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":17227.0,
@@ -3606,12 +3607,12 @@
     "rb":null,
     "others":2.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-06-18"
   },
   {
     "dates":"18 Jun",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2628.0,
@@ -3625,12 +3626,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-06-18"
   },
   {
     "dates":"20\u201323 Jun",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2004.0,
@@ -3644,12 +3645,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-06-23"
   },
   {
     "dates":"22\u201323 Jun",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":1794.0,
@@ -3663,12 +3664,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-06-23"
   },
   {
     "dates":"24\u201325 Jun",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1617.0,
@@ -3682,12 +3683,12 @@
     "rb":null,
     "others":2.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-06-25"
   },
   {
     "dates":"25 Jun",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2605.0,
@@ -3701,12 +3702,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-06-25"
   },
   {
     "dates":"25\u201326 Jun",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1628.0,
@@ -3720,12 +3721,12 @@
     "rb":null,
     "others":4.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-06-26"
   },
   {
     "dates":"25\u201327 Jun",
     "pollster":"Survation",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1700.0,
@@ -3739,12 +3740,12 @@
     "rb":null,
     "others":4.0,
     "lead":1.0,
-    "year":2025,
     "date":"2025-06-27"
   },
   {
     "dates":"25\u201327 Jun",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -3758,31 +3759,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-06-27"
-  },
-  {
-    "dates":"13\u201330 Jun",
-    "pollster":"More in Common(MRP)",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":11282.0,
-    "labour":22.0,
-    "conservative":21.0,
-    "reform":28.0,
-    "liberal_democrats":15.0,
-    "green":8.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":2.0,
-    "lead":6.0,
-    "year":2025,
-    "date":"2025-06-30"
   },
   {
     "dates":"26\u201330 Jun",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5018.0,
@@ -3796,12 +3778,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-06-30"
   },
   {
     "dates":"27\u201330 Jun",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2532.0,
@@ -3815,12 +3797,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-06-30"
   },
   {
     "dates":"29\u201330 Jun",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2392.0,
@@ -3834,12 +3816,31 @@
     "rb":null,
     "others":2.0,
     "lead":2.0,
+    "date":"2025-06-30"
+  },
+  {
+    "dates":"13\u201330 Jun",
+    "pollster":"More in Common(MRP)",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":11282.0,
+    "labour":22.0,
+    "conservative":21.0,
+    "reform":28.0,
+    "liberal_democrats":15.0,
+    "green":8.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":2.0,
+    "lead":6.0,
     "date":"2025-06-30"
   },
   {
     "dates":"2 Jul",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2604.0,
@@ -3853,12 +3854,12 @@
     "rb":null,
     "others":3.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-07-02"
   },
   {
     "dates":"4\u20136 Jul",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1259.0,
@@ -3872,12 +3873,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-07-06"
   },
   {
     "dates":"4\u20137 Jul",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2084.0,
@@ -3891,12 +3892,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-07-07"
   },
   {
     "dates":"4\u20137 Jul",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2084.0,
@@ -3910,12 +3911,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-07-07"
   },
   {
     "dates":"6\u20137 Jul",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2513.0,
@@ -3929,12 +3930,12 @@
     "rb":null,
     "others":3.0,
     "lead":2.0,
-    "year":2025,
     "date":"2025-07-07"
   },
   {
     "dates":"9 Jul",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2651.0,
@@ -3948,12 +3949,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-07-09"
   },
   {
     "dates":"9\u201310 Jul",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1628.0,
@@ -3967,12 +3968,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-07-10"
   },
   {
     "dates":"9\u201310 Jul",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"MultiComms Ltd",
     "area":"GB",
     "sample_size":1308.0,
@@ -3986,12 +3987,12 @@
     "rb":null,
     "others":4.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-07-10"
   },
   {
     "dates":"9\u201311 Jul",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2052.0,
@@ -4005,12 +4006,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-07-11"
   },
   {
     "dates":"13\u201314 Jul",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2209.0,
@@ -4024,12 +4025,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-07-14"
   },
   {
     "dates":"11\u201314 Jul",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2311.0,
@@ -4043,12 +4044,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-07-14"
   },
   {
     "dates":"16 Jul",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2603.0,
@@ -4062,31 +4063,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-07-16"
-  },
-  {
-    "dates":"14\u201318 Jul",
-    "pollster":"Focaldata",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":1271.0,
-    "labour":23.0,
-    "conservative":19.0,
-    "reform":27.0,
-    "liberal_democrats":14.0,
-    "green":9.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":5.0,
-    "lead":4.0,
-    "year":2025,
-    "date":"2025-07-18"
   },
   {
     "dates":"17\u201318 Jul",
     "pollster":"JL Partners",
+    "year":2025,
     "client":"The Telegraph",
     "area":"GB",
     "sample_size":2035.0,
@@ -4100,12 +4082,31 @@
     "rb":null,
     "others":5.0,
     "lead":6.0,
+    "date":"2025-07-18"
+  },
+  {
+    "dates":"14\u201318 Jul",
+    "pollster":"Focaldata",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":1271.0,
+    "labour":23.0,
+    "conservative":19.0,
+    "reform":27.0,
+    "liberal_democrats":14.0,
+    "green":9.0,
+    "snp":2.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":5.0,
+    "lead":4.0,
     "date":"2025-07-18"
   },
   {
     "dates":"18\u201320 Jul",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2153.0,
@@ -4119,12 +4120,12 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-07-20"
   },
   {
     "dates":"20\u201321 Jul",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2273.0,
@@ -4138,12 +4139,12 @@
     "rb":null,
     "others":3.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-07-21"
   },
   {
     "dates":"23 Jul",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2651.0,
@@ -4157,12 +4158,12 @@
     "rb":null,
     "others":4.0,
     "lead":14.0,
-    "year":2025,
     "date":"2025-07-23"
   },
   {
     "dates":"23\u201325 Jul",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -4176,12 +4177,12 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-07-25"
   },
   {
     "dates":"26\u201328 Jul",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2153.0,
@@ -4195,12 +4196,12 @@
     "rb":null,
     "others":5.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-07-28"
   },
   {
     "dates":"27\u201328 Jul",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2208.0,
@@ -4214,12 +4215,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-07-28"
   },
   {
     "dates":"30 Jul",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2654.0,
@@ -4233,12 +4234,12 @@
     "rb":null,
     "others":7.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-07-30"
   },
   {
     "dates":"29\u201331 Jul",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1528.0,
@@ -4252,12 +4253,12 @@
     "rb":null,
     "others":3.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-07-31"
   },
   {
     "dates":"1\u20133 Aug",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2042.0,
@@ -4271,12 +4272,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-08-03"
   },
   {
     "dates":"16 Jul\u20133 Aug",
     "pollster":"Stack Data Strategy (MRP)",
+    "year":2025,
     "client":"Conservative Party(alleged[c])",
     "area":"GB",
     "sample_size":9301.0,
@@ -4290,12 +4291,12 @@
     "rb":null,
     "others":4.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-08-03"
   },
   {
     "dates":"1\u20133 Aug",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1259.0,
@@ -4309,12 +4310,12 @@
     "rb":null,
     "others":3.0,
     "lead":11.0,
-    "year":2025,
     "date":"2025-08-03"
   },
   {
     "dates":"3\u20134 Aug",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2472.0,
@@ -4328,12 +4329,12 @@
     "rb":null,
     "others":4.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-08-04"
   },
   {
     "dates":"6 Aug",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2627.0,
@@ -4347,12 +4348,12 @@
     "rb":null,
     "others":7.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-08-06"
   },
   {
     "dates":"6\u20138 Aug",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -4366,12 +4367,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-08-08"
   },
   {
     "dates":"8\u201311 Aug",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2015.0,
@@ -4385,12 +4386,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-08-11"
   },
   {
     "dates":"10\u201311 Aug",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2501.0,
@@ -4404,12 +4405,12 @@
     "rb":null,
     "others":5.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-08-11"
   },
   {
     "dates":"13\u201314 Aug",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2513.0,
@@ -4423,12 +4424,12 @@
     "rb":null,
     "others":6.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-08-14"
   },
   {
     "dates":"14\u201318 Aug",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5029.0,
@@ -4442,12 +4443,12 @@
     "rb":null,
     "others":7.0,
     "lead":4.0,
-    "year":2025,
     "date":"2025-08-18"
   },
   {
     "dates":"15\u201318 Aug",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2000.0,
@@ -4461,12 +4462,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-08-18"
   },
   {
     "dates":"17\u201318 Aug",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2394.0,
@@ -4480,12 +4481,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-08-18"
   },
   {
     "dates":"15\u201319 Aug",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1500.0,
@@ -4499,12 +4500,12 @@
     "rb":null,
     "others":4.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-08-19"
   },
   {
     "dates":"20 Aug",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2615.0,
@@ -4518,12 +4519,12 @@
     "rb":null,
     "others":6.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-08-20"
   },
   {
     "dates":"20\u201322 Aug",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -4537,12 +4538,12 @@
     "rb":null,
     "others":5.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-08-22"
   },
   {
     "dates":"22\u201326 Aug",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2032.0,
@@ -4556,12 +4557,12 @@
     "rb":null,
     "others":5.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-08-26"
   },
   {
     "dates":"25\u201326 Aug",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2439.0,
@@ -4575,12 +4576,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-08-26"
   },
   {
     "dates":"27 Aug",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2538.0,
@@ -4594,12 +4595,12 @@
     "rb":null,
     "others":6.0,
     "lead":16.0,
-    "year":2025,
     "date":"2025-08-27"
   },
   {
     "dates":"26\u201328 Aug",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1504.0,
@@ -4613,31 +4614,12 @@
     "rb":null,
     "others":4.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-08-28"
-  },
-  {
-    "dates":"29\u201331 Aug",
-    "pollster":"Freshwater Strategy",
-    "client":"City AM",
-    "area":"GB",
-    "sample_size":1251.0,
-    "labour":20.0,
-    "conservative":17.0,
-    "reform":33.0,
-    "liberal_democrats":15.0,
-    "green":7.0,
-    "snp":3.0,
-    "plaid_cymru":null,
-    "rb":null,
-    "others":4.0,
-    "lead":13.0,
-    "year":2025,
-    "date":"2025-08-31"
   },
   {
     "dates":"19\u201331 Aug",
     "pollster":"JL Partners",
+    "year":2025,
     "client":"The Sun",
     "area":"GB",
     "sample_size":2118.0,
@@ -4651,31 +4633,31 @@
     "rb":null,
     "others":6.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-08-31"
   },
   {
-    "dates":"29 Aug\u20131 Sep",
-    "pollster":"More in Common",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2042.0,
-    "labour":21.0,
-    "conservative":18.0,
-    "reform":31.0,
-    "liberal_democrats":13.0,
-    "green":8.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":6.0,
-    "lead":10.0,
+    "dates":"29\u201331 Aug",
+    "pollster":"Freshwater Strategy",
     "year":2025,
-    "date":"2025-09-01"
+    "client":"City AM",
+    "area":"GB",
+    "sample_size":1251.0,
+    "labour":20.0,
+    "conservative":17.0,
+    "reform":33.0,
+    "liberal_democrats":15.0,
+    "green":7.0,
+    "snp":3.0,
+    "plaid_cymru":null,
+    "rb":null,
+    "others":4.0,
+    "lead":13.0,
+    "date":"2025-08-31"
   },
   {
     "dates":"31 Aug\u20131 Sep",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2523.0,
@@ -4689,13 +4671,13 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-09-01"
   },
   {
     "dates":"21 Aug\u20131 Sep",
     "pollster":"Survation(MRP)",
-    "client":"38 Degrees[235]",
+    "year":2025,
+    "client":"38 Degrees[236]",
     "area":"UK",
     "sample_size":8546.0,
     "labour":25.0,
@@ -4708,12 +4690,31 @@
     "rb":null,
     "others":4.0,
     "lead":4.0,
+    "date":"2025-09-01"
+  },
+  {
+    "dates":"29 Aug\u20131 Sep",
+    "pollster":"More in Common",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2042.0,
+    "labour":21.0,
+    "conservative":18.0,
+    "reform":31.0,
+    "liberal_democrats":13.0,
+    "green":8.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":6.0,
+    "lead":10.0,
     "date":"2025-09-01"
   },
   {
     "dates":"28 Aug\u20132 Sep",
     "pollster":"Survation",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1818.0,
@@ -4727,12 +4728,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-09-02"
   },
   {
     "dates":"3 Sep",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2576.0,
@@ -4746,12 +4747,12 @@
     "rb":null,
     "others":5.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-09-03"
   },
   {
     "dates":"1\u20134 Sep",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1644.0,
@@ -4765,12 +4766,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-09-04"
   },
   {
     "dates":"3\u20135 Sep",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -4784,12 +4785,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-09-05"
   },
   {
     "dates":"5\u20138 Sep",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2106.0,
@@ -4803,12 +4804,12 @@
     "rb":null,
     "others":3.0,
     "lead":11.0,
-    "year":2025,
     "date":"2025-09-08"
   },
   {
     "dates":"7\u20138 Sep",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2500.0,
@@ -4822,12 +4823,12 @@
     "rb":null,
     "others":3.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-09-08"
   },
   {
     "dates":"10 Sep",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2717.0,
@@ -4841,12 +4842,12 @@
     "rb":null,
     "others":6.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-09-10"
   },
   {
     "dates":"1 Aug \u2013 11 Sep",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"Dale Vince\/Hope Not Hate",
     "area":"TBA",
     "sample_size":45335.0,
@@ -4860,12 +4861,12 @@
     "rb":null,
     "others":null,
     "lead":6.0,
-    "year":2025,
     "date":"2025-09-11"
   },
   {
     "dates":"14\u201315 Sep",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2384.0,
@@ -4879,31 +4880,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
-    "date":"2025-09-15"
-  },
-  {
-    "dates":"11\u201315 Sep",
-    "pollster":"Lord Ashcroft Polls",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":5082.0,
-    "labour":22.0,
-    "conservative":20.0,
-    "reform":27.0,
-    "liberal_democrats":10.0,
-    "green":13.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":6.0,
-    "lead":5.0,
-    "year":2025,
     "date":"2025-09-15"
   },
   {
     "dates":"12\u201315 Sep",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2037.0,
@@ -4917,13 +4899,13 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-09-15"
   },
   {
     "dates":"8 Aug \u2013 15 Sep",
     "pollster":"More in Common(MRP)",
-    "client":"The Times[223]",
+    "year":2025,
+    "client":"The Times[224]",
     "area":"GB",
     "sample_size":19520.0,
     "labour":21.0,
@@ -4936,12 +4918,31 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
+    "date":"2025-09-15"
+  },
+  {
+    "dates":"11\u201315 Sep",
+    "pollster":"Lord Ashcroft Polls",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":5082.0,
+    "labour":22.0,
+    "conservative":20.0,
+    "reform":27.0,
+    "liberal_democrats":10.0,
+    "green":13.0,
+    "snp":2.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":6.0,
+    "lead":5.0,
     "date":"2025-09-15"
   },
   {
     "dates":"11\u201317 Sep",
     "pollster":"Ipsos",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1157.0,
@@ -4955,12 +4956,12 @@
     "rb":null,
     "others":3.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-09-17"
   },
   {
     "dates":"17\u201318 Sep",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":4795.0,
@@ -4974,12 +4975,12 @@
     "rb":null,
     "others":5.0,
     "lead":18.0,
-    "year":2025,
     "date":"2025-09-18"
   },
   {
     "dates":"17\u201318 Sep",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1635.0,
@@ -4993,12 +4994,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-09-18"
   },
   {
     "dates":"17\u201319 Sep",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -5012,12 +5013,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-09-19"
   },
   {
     "dates":"19\u201322 Sep",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2055.0,
@@ -5031,12 +5032,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-09-22"
   },
   {
     "dates":"21\u201322 Sep",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2348.0,
@@ -5050,12 +5051,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-09-22"
   },
   {
     "dates":"31 Aug\u201324 Sep",
     "pollster":"YouGov(MRP)",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":13000.0,
@@ -5069,12 +5070,12 @@
     "rb":null,
     "others":5.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-09-24"
   },
   {
     "dates":"24 Sep",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2665.0,
@@ -5088,12 +5089,12 @@
     "rb":null,
     "others":5.0,
     "lead":16.0,
-    "year":2025,
     "date":"2025-09-24"
   },
   {
     "dates":"24\u201325 Sep",
     "pollster":"Survation",
+    "year":2025,
     "client":"Daily Mail",
     "area":"UK",
     "sample_size":2027.0,
@@ -5107,12 +5108,12 @@
     "rb":null,
     "others":4.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-09-25"
   },
   {
     "dates":"24\u201326 Sep",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -5126,12 +5127,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-09-26"
   },
   {
     "dates":"28\u201329 Sep",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2585.0,
@@ -5145,12 +5146,12 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-09-29"
   },
   {
     "dates":"26\u201329 Sep",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1562.0,
@@ -5164,12 +5165,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-09-29"
   },
   {
     "dates":"19 Sep\u20131 Oct",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2014.0,
@@ -5183,12 +5184,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-10-01"
   },
   {
     "dates":"1 Oct",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2611.0,
@@ -5202,12 +5203,12 @@
     "rb":null,
     "others":4.0,
     "lead":16.0,
-    "year":2025,
     "date":"2025-10-01"
   },
   {
     "dates":"26 Sep\u20133 Oct",
     "pollster":"JL Partners",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":6083.0,
@@ -5221,12 +5222,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-10-03"
   },
   {
     "dates":"1\u20133 Oct",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -5240,12 +5241,12 @@
     "rb":null,
     "others":4.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-10-03"
   },
   {
     "dates":"3\u20135 Oct",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1251.0,
@@ -5259,12 +5260,12 @@
     "rb":null,
     "others":2.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-10-05"
   },
   {
     "dates":"3\u20136 Oct",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2003.0,
@@ -5278,12 +5279,12 @@
     "rb":null,
     "others":3.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-10-06"
   },
   {
     "dates":"5\u20136 Oct",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2333.0,
@@ -5297,12 +5298,12 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-10-06"
   },
   {
     "dates":"8 Oct",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2668.0,
@@ -5316,12 +5317,12 @@
     "rb":null,
     "others":4.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-10-08"
   },
   {
     "dates":"8\u201310 Oct",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -5335,12 +5336,12 @@
     "rb":null,
     "others":3.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-10-10"
   },
   {
     "dates":"10\u201313 Oct",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2004.0,
@@ -5354,12 +5355,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-10-13"
   },
   {
     "dates":"12\u201313 Oct",
     "pollster":"YouGov",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2321.0,
@@ -5373,12 +5374,12 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-10-13"
   },
   {
     "dates":"15 Oct",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2705.0,
@@ -5392,12 +5393,12 @@
     "rb":null,
     "others":4.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-10-15"
   },
   {
     "dates":"8\u201317 Oct",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2057.0,
@@ -5411,12 +5412,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-10-17"
   },
   {
     "dates":"19\u201320 Oct",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2396.0,
@@ -5430,12 +5431,31 @@
     "rb":null,
     "others":2.0,
     "lead":6.0,
+    "date":"2025-10-20"
+  },
+  {
+    "dates":"16\u201320 Oct",
+    "pollster":"Lord Ashcroft Polls",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":5038.0,
+    "labour":19.0,
+    "conservative":19.0,
+    "reform":28.0,
+    "liberal_democrats":10.0,
+    "green":17.0,
+    "snp":2.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":4.0,
+    "lead":9.0,
     "date":"2025-10-20"
   },
   {
     "dates":"17\u201320 Oct",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2084.0,
@@ -5449,31 +5469,12 @@
     "rb":null,
     "others":2.0,
     "lead":9.0,
-    "year":2025,
-    "date":"2025-10-20"
-  },
-  {
-    "dates":"16\u201320 Oct",
-    "pollster":"Lord Ashcroft Polls",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":5038.0,
-    "labour":19.0,
-    "conservative":19.0,
-    "reform":28.0,
-    "liberal_democrats":10.0,
-    "green":17.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":4.0,
-    "lead":9.0,
-    "year":2025,
     "date":"2025-10-20"
   },
   {
     "dates":"22 Oct",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2635.0,
@@ -5487,12 +5488,12 @@
     "rb":null,
     "others":4.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-10-22"
   },
   {
     "dates":"22\u201323 Oct",
     "pollster":"Techne",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1647.0,
@@ -5506,12 +5507,12 @@
     "rb":null,
     "others":3.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-10-23"
   },
   {
     "dates":"22\u201324 Oct",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2030.0,
@@ -5525,12 +5526,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-10-24"
   },
   {
     "dates":"24\u201327 Oct",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2030.0,
@@ -5544,12 +5545,12 @@
     "rb":null,
     "others":1.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-10-27"
   },
   {
     "dates":"26\u201327 Oct",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2389.0,
@@ -5563,12 +5564,12 @@
     "rb":null,
     "others":3.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-10-27"
   },
   {
     "dates":"29 Oct",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":3065.0,
@@ -5582,12 +5583,12 @@
     "rb":null,
     "others":3.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-10-29"
   },
   {
     "dates":"31 Oct\u20132 Nov",
     "pollster":"JL Partners",
+    "year":2025,
     "client":"The Sun",
     "area":"GB",
     "sample_size":1505.0,
@@ -5601,12 +5602,12 @@
     "rb":null,
     "others":5.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-11-02"
   },
   {
     "dates":"31 Oct\u20133 Nov",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2031.0,
@@ -5620,12 +5621,12 @@
     "rb":null,
     "others":3.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-11-03"
   },
   {
     "dates":"2\u20133 Nov",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2376.0,
@@ -5639,12 +5640,12 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-11-03"
   },
   {
     "dates":"30 Oct\u20135 Nov",
     "pollster":"Ipsos",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1148.0,
@@ -5658,12 +5659,12 @@
     "rb":null,
     "others":1.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-11-05"
   },
   {
     "dates":"5\u20136 Nov",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2717.0,
@@ -5677,12 +5678,12 @@
     "rb":null,
     "others":3.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-11-06"
   },
   {
     "dates":"5\u20137 Nov",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -5696,12 +5697,12 @@
     "rb":null,
     "others":3.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-11-07"
   },
   {
     "dates":"7\u20139 Nov",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1250.0,
@@ -5715,31 +5716,12 @@
     "rb":null,
     "others":3.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-11-09"
-  },
-  {
-    "dates":"7\u201310 Nov",
-    "pollster":"More in Common",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2011.0,
-    "labour":20.0,
-    "conservative":19.0,
-    "reform":31.0,
-    "liberal_democrats":14.0,
-    "green":12.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":3.0,
-    "lead":11.0,
-    "year":2025,
-    "date":"2025-11-10"
   },
   {
     "dates":"9\u201310 Nov",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2366.0,
@@ -5753,12 +5735,31 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
+    "date":"2025-11-10"
+  },
+  {
+    "dates":"7\u201310 Nov",
+    "pollster":"More in Common",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2011.0,
+    "labour":20.0,
+    "conservative":19.0,
+    "reform":31.0,
+    "liberal_democrats":14.0,
+    "green":12.0,
+    "snp":2.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":3.0,
+    "lead":11.0,
     "date":"2025-11-10"
   },
   {
     "dates":"12 Nov",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2011.0,
@@ -5772,31 +5773,12 @@
     "rb":null,
     "others":3.0,
     "lead":16.0,
-    "year":2025,
     "date":"2025-11-12"
-  },
-  {
-    "dates":"14\u201317 Nov",
-    "pollster":"More in Common",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2052.0,
-    "labour":20.0,
-    "conservative":20.0,
-    "reform":30.0,
-    "liberal_democrats":14.0,
-    "green":11.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":2.0,
-    "lead":10.0,
-    "year":2025,
-    "date":"2025-11-17"
   },
   {
     "dates":"16\u201317 Nov",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2355.0,
@@ -5810,12 +5792,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-11-17"
   },
   {
     "dates":"13\u201317 Nov",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5038.0,
@@ -5829,12 +5811,31 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
+    "date":"2025-11-17"
+  },
+  {
+    "dates":"14\u201317 Nov",
+    "pollster":"More in Common",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2052.0,
+    "labour":20.0,
+    "conservative":20.0,
+    "reform":30.0,
+    "liberal_democrats":14.0,
+    "green":11.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":2.0,
+    "lead":10.0,
     "date":"2025-11-17"
   },
   {
     "dates":"19 Nov",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2566.0,
@@ -5848,12 +5849,12 @@
     "rb":null,
     "others":3.0,
     "lead":14.0,
-    "year":2025,
     "date":"2025-11-19"
   },
   {
     "dates":"16\u201320 Nov",
     "pollster":"Survation",
+    "year":2025,
     "client":"N\/A",
     "area":"UK",
     "sample_size":2082.0,
@@ -5867,12 +5868,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-11-20"
   },
   {
     "dates":"18\u201321 Nov",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1725.0,
@@ -5886,12 +5887,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-11-21"
   },
   {
     "dates":"19\u201321 Nov",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -5905,12 +5906,12 @@
     "rb":null,
     "others":3.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-11-21"
   },
   {
     "dates":"22\u201324 Nov",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2062.0,
@@ -5924,12 +5925,12 @@
     "rb":null,
     "others":3.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-11-24"
   },
   {
     "dates":"23\u201324 Nov",
     "pollster":"YouGov",
+    "year":2025,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2399.0,
@@ -5943,12 +5944,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-11-24"
   },
   {
     "dates":"26 Nov",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2555.0,
@@ -5962,12 +5963,12 @@
     "rb":null,
     "others":2.0,
     "lead":13.0,
-    "year":2025,
     "date":"2025-11-26"
   },
   {
     "dates":"26\u201327 Nov",
     "pollster":"BMG Research",
+    "year":2025,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1548.0,
@@ -5981,12 +5982,31 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-11-27"
   },
   {
     "dates":"26\u201328 Nov",
+    "pollster":"Opinium",
+    "year":2025,
+    "client":"The Observer",
+    "area":"GB",
+    "sample_size":2050.0,
+    "labour":21.0,
+    "conservative":17.0,
+    "reform":31.0,
+    "liberal_democrats":11.0,
+    "green":13.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":3.0,
+    "lead":10.0,
+    "date":"2025-11-28"
+  },
+  {
+    "dates":"26\u201328 Nov",
     "pollster":"Focaldata",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1343.0,
@@ -6000,31 +6020,12 @@
     "rb":null,
     "others":3.0,
     "lead":9.0,
-    "year":2025,
-    "date":"2025-11-28"
-  },
-  {
-    "dates":"26\u201328 Nov",
-    "pollster":"Opinium",
-    "client":"The Observer",
-    "area":"GB",
-    "sample_size":2050.0,
-    "labour":21.0,
-    "conservative":17.0,
-    "reform":31.0,
-    "liberal_democrats":11.0,
-    "green":13.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":3.0,
-    "lead":10.0,
-    "year":2025,
     "date":"2025-11-28"
   },
   {
     "dates":"28\u201330 Nov",
     "pollster":"Freshwater Strategy",
+    "year":2025,
     "client":"City AM",
     "area":"GB",
     "sample_size":1558.0,
@@ -6038,31 +6039,12 @@
     "rb":null,
     "others":2.0,
     "lead":11.0,
-    "year":2025,
     "date":"2025-11-30"
-  },
-  {
-    "dates":"28 Nov\u20131 Dec",
-    "pollster":"More in Common",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2114.0,
-    "labour":21.0,
-    "conservative":21.0,
-    "reform":30.0,
-    "liberal_democrats":13.0,
-    "green":11.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":1.0,
-    "lead":9.0,
-    "year":2025,
-    "date":"2025-12-01"
   },
   {
     "dates":"29 Nov\u20131 Dec",
     "pollster":"JL Partners",
+    "year":2025,
     "client":"The Sun",
     "area":"GB",
     "sample_size":1537.0,
@@ -6076,12 +6058,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2025,
     "date":"2025-12-01"
   },
   {
     "dates":"30 Nov\u20131 Dec",
     "pollster":"YouGov",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2366.0,
@@ -6095,12 +6077,31 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
+    "date":"2025-12-01"
+  },
+  {
+    "dates":"28 Nov\u20131 Dec",
+    "pollster":"More in Common",
     "year":2025,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2114.0,
+    "labour":21.0,
+    "conservative":21.0,
+    "reform":30.0,
+    "liberal_democrats":13.0,
+    "green":11.0,
+    "snp":2.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":1.0,
+    "lead":9.0,
     "date":"2025-12-01"
   },
   {
     "dates":"3 Dec",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2591.0,
@@ -6114,12 +6115,12 @@
     "rb":null,
     "others":3.0,
     "lead":11.0,
-    "year":2025,
     "date":"2025-12-03"
   },
   {
     "dates":"1\u20138 Dec",
     "pollster":"Find Out Now\/Electoral Calculus(MRP)",
+    "year":2025,
     "client":"PLMR",
     "area":"GB",
     "sample_size":5598.0,
@@ -6133,12 +6134,12 @@
     "rb":null,
     "others":4.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-12-08"
   },
   {
     "dates":"4\u20138 Dec",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2009.0,
@@ -6152,12 +6153,12 @@
     "rb":null,
     "others":2.0,
     "lead":9.0,
-    "year":2025,
     "date":"2025-12-08"
   },
   {
     "dates":"7\u20138 Dec",
     "pollster":"YouGov",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2303.0,
@@ -6171,12 +6172,12 @@
     "rb":null,
     "others":2.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-12-08"
   },
   {
     "dates":"10 Dec",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2363.0,
@@ -6190,12 +6191,12 @@
     "rb":null,
     "others":3.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-12-10"
   },
   {
     "dates":"10\u201312 Dec",
     "pollster":"Opinium",
+    "year":2025,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2053.0,
@@ -6209,12 +6210,12 @@
     "rb":null,
     "others":2.0,
     "lead":11.0,
-    "year":2025,
     "date":"2025-12-12"
   },
   {
     "dates":"11\u201315 Dec",
     "pollster":"Lord Ashcroft Polls",
+    "year":2025,
     "client":"Mail on Sunday",
     "area":"GB",
     "sample_size":5196.0,
@@ -6228,12 +6229,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2025,
     "date":"2025-12-15"
   },
   {
     "dates":"12\u201315 Dec",
     "pollster":"Verian",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1427.0,
@@ -6247,12 +6248,12 @@
     "rb":null,
     "others":2.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-12-15"
   },
   {
     "dates":"14\u201315 Dec",
     "pollster":"YouGov",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2322.0,
@@ -6266,12 +6267,12 @@
     "rb":null,
     "others":2.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-12-15"
   },
   {
     "dates":"12\u201316 Dec",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1582.0,
@@ -6285,12 +6286,12 @@
     "rb":null,
     "others":3.0,
     "lead":8.0,
-    "year":2025,
     "date":"2025-12-16"
   },
   {
     "dates":"27 Nov\u201316 Dec",
     "pollster":"More in Common (MRP)",
+    "year":2025,
     "client":"The Times",
     "area":"GB",
     "sample_size":16083.0,
@@ -6304,12 +6305,12 @@
     "rb":null,
     "others":2.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-12-16"
   },
   {
     "dates":"17 Dec",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1909.0,
@@ -6323,12 +6324,12 @@
     "rb":null,
     "others":3.0,
     "lead":15.0,
-    "year":2025,
     "date":"2025-12-17"
   },
   {
     "dates":"16\u201318 Dec",
     "pollster":"Deltapoll",
+    "year":2025,
     "client":"The Mirror",
     "area":"GB",
     "sample_size":1997.0,
@@ -6342,12 +6343,12 @@
     "rb":null,
     "others":2.0,
     "lead":10.0,
-    "year":2025,
     "date":"2025-12-18"
   },
   {
     "dates":"21\u201322 Dec",
     "pollster":"YouGov",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2266.0,
@@ -6361,12 +6362,12 @@
     "rb":null,
     "others":2.0,
     "lead":5.0,
-    "year":2025,
     "date":"2025-12-22"
   },
   {
     "dates":"19\u201323 Dec",
     "pollster":"More in Common",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2026.0,
@@ -6380,12 +6381,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2025,
     "date":"2025-12-23"
   },
   {
     "dates":"24 Dec",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2879.0,
@@ -6399,12 +6400,12 @@
     "rb":null,
     "others":4.0,
     "lead":12.0,
-    "year":2025,
     "date":"2025-12-24"
   },
   {
     "dates":"31 Dec",
     "pollster":"Find Out Now",
+    "year":2025,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2930.0,
@@ -6418,12 +6419,12 @@
     "rb":null,
     "others":4.0,
     "lead":14.0,
-    "year":2025,
     "date":"2025-12-31"
   },
   {
     "dates":"2\u20135 Jan",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2021.0,
@@ -6437,12 +6438,12 @@
     "rb":"2",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-05"
   },
   {
     "dates":"4\u20135 Jan",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2343.0,
@@ -6456,12 +6457,12 @@
     "rb":"2",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-05"
   },
   {
     "dates":"7\u20138 Jan",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2422.0,
@@ -6475,12 +6476,12 @@
     "rb":"2",
     "others":14.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-08"
   },
   {
     "dates":"14 Dec\u20139 Jan",
     "pollster":"YouGov",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":17230.0,
@@ -6494,12 +6495,12 @@
     "rb":"2",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-09"
   },
   {
     "dates":"7\u20139 Jan",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -6513,12 +6514,12 @@
     "rb":"3",
     "others":11.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-09"
   },
   {
     "dates":"9\u201311 Jan",
     "pollster":"Freshwater Strategy",
+    "year":2026,
     "client":"City AM",
     "area":"GB",
     "sample_size":1250.0,
@@ -6532,12 +6533,12 @@
     "rb":"3",
     "others":14.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-11"
   },
   {
     "dates":"11\u201312 Jan",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2259.0,
@@ -6551,12 +6552,12 @@
     "rb":"2",
     "others":4.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-12"
   },
   {
     "dates":"10\u201313 Jan",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2036.0,
@@ -6570,12 +6571,12 @@
     "rb":"2",
     "others":10.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-13"
   },
   {
     "dates":"14 Jan",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1592.0,
@@ -6589,12 +6590,12 @@
     "rb":"3",
     "others":9.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-14"
   },
   {
     "dates":"10\u201314 Jan",
     "pollster":"Survation",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1616.0,
@@ -6608,12 +6609,12 @@
     "rb":"4",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-14"
   },
   {
     "dates":"14\u201315 Jan",
     "pollster":"Techne",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1636.0,
@@ -6627,12 +6628,12 @@
     "rb":"3",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-15"
   },
   {
     "dates":"15\u201319 Jan",
     "pollster":"Lord Ashcroft Polls",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5448.0,
@@ -6646,12 +6647,12 @@
     "rb":"4",
     "others":4.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-19"
   },
   {
     "dates":"16\u201319 Jan",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2007.0,
@@ -6665,12 +6666,12 @@
     "rb":"1",
     "others":10.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-19"
   },
   {
     "dates":"16\u201319 Jan",
     "pollster":"Focaldata",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1585.0,
@@ -6684,12 +6685,12 @@
     "rb":"4",
     "others":5.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-19"
   },
   {
     "dates":"18\u201319 Jan",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2335.0,
@@ -6703,12 +6704,12 @@
     "rb":"3",
     "others":5.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-19"
   },
   {
     "dates":"21 Jan",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1385.0,
@@ -6722,12 +6723,12 @@
     "rb":"3",
     "others":14.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-21"
   },
   {
     "dates":"21\u201323 Jan",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -6741,12 +6742,12 @@
     "rb":"3",
     "others":9.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-23"
   },
   {
     "dates":"23\u201325 Jan",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2016.0,
@@ -6760,12 +6761,12 @@
     "rb":"3",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-25"
   },
   {
     "dates":"25\u201326 Jan",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2429.0,
@@ -6779,12 +6780,12 @@
     "rb":"2",
     "others":4.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-26"
   },
   {
     "dates":"22\u201327 Jan",
     "pollster":"Ipsos",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1104.0,
@@ -6798,12 +6799,12 @@
     "rb":"1",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-27"
   },
   {
     "dates":"28 Jan",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1799.0,
@@ -6817,12 +6818,12 @@
     "rb":"3",
     "others":10.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-28"
   },
   {
     "dates":"28\u201329 Jan",
     "pollster":"Survation",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1016.0,
@@ -6836,12 +6837,12 @@
     "rb":"4",
     "others":11.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-29"
   },
   {
     "dates":"28\u201329 Jan",
     "pollster":"BMG Research",
+    "year":2026,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1513.0,
@@ -6855,12 +6856,12 @@
     "rb":"3",
     "others":12.0,
     "lead":null,
-    "year":2026,
     "date":"2026-01-29"
   },
   {
     "dates":"30 Jan\u20131 Feb",
     "pollster":"Freshwater Strategy",
+    "year":2026,
     "client":"City AM",
     "area":"GB",
     "sample_size":1250.0,
@@ -6874,12 +6875,12 @@
     "rb":"1",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-01"
   },
   {
     "dates":"1\u20132 Feb",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2330.0,
@@ -6893,12 +6894,12 @@
     "rb":"2",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-02"
   },
   {
     "dates":"31 Jan\u20132 Feb",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2005.0,
@@ -6912,12 +6913,12 @@
     "rb":"2",
     "others":9.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-02"
   },
   {
     "dates":"4 Feb",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2264.0,
@@ -6931,12 +6932,12 @@
     "rb":"3",
     "others":13.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-04"
   },
   {
     "dates":"4\u20136 Feb",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2054.0,
@@ -6950,12 +6951,12 @@
     "rb":"3",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-06"
   },
   {
     "dates":"8\u20139 Feb",
     "pollster":"YouGov",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2466.0,
@@ -6969,12 +6970,12 @@
     "rb":"2",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-09"
   },
   {
     "dates":"6\u201310 Feb",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2035.0,
@@ -6988,12 +6989,12 @@
     "rb":"2",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-10"
   },
   {
     "dates":"11 Feb",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1394.0,
@@ -7007,12 +7008,12 @@
     "rb":"4",
     "others":10.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-11"
   },
   {
     "dates":"4\u201312 Feb",
     "pollster":"JL Partners",
+    "year":2026,
     "client":"The Sun",
     "area":"GB",
     "sample_size":2006.0,
@@ -7026,12 +7027,12 @@
     "rb":"6",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-12"
   },
   {
     "dates":"4\u201312 Feb",
     "pollster":"Trajectory Partnership",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1456.0,
@@ -7045,12 +7046,12 @@
     "rb":"3YP1UKIP1Other 1",
     "others":9.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-12"
   },
   {
     "dates":"11\u201312 Feb",
     "pollster":"Techne",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1644.0,
@@ -7064,12 +7065,12 @@
     "rb":"3",
     "others":11.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-12"
   },
   {
     "dates":"13\u201316 Feb",
     "pollster":"Good Growth Foundation",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2000.0,
@@ -7083,12 +7084,12 @@
     "rb":"3",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-16"
   },
   {
     "dates":"15\u201316 Feb",
     "pollster":"YouGov",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2384.0,
@@ -7102,12 +7103,12 @@
     "rb":"4",
     "others":5.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-16"
   },
   {
     "dates":"13\u201317 Feb",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2108.0,
@@ -7121,12 +7122,12 @@
     "rb":"2",
     "others":6.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-17"
   },
   {
     "dates":"18 Feb",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2178.0,
@@ -7140,12 +7141,12 @@
     "rb":"7",
     "others":10.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-18"
   },
   {
     "dates":"22\u201323 Feb",
     "pollster":"YouGov",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2325.0,
@@ -7159,31 +7160,12 @@
     "rb":"4",
     "others":6.0,
     "lead":null,
-    "year":2026,
-    "date":"2026-02-23"
-  },
-  {
-    "dates":"20\u201323 Feb",
-    "pollster":"More in Common",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2015.0,
-    "labour":22.0,
-    "conservative":20.0,
-    "reform":28.0,
-    "liberal_democrats":14.0,
-    "green":11.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":"2",
-    "others":6.0,
-    "lead":null,
-    "year":2026,
     "date":"2026-02-23"
   },
   {
     "dates":"19\u201323 Feb",
     "pollster":"Lord Ashcroft Polls",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5576.0,
@@ -7197,12 +7179,31 @@
     "rb":"6",
     "others":2.0,
     "lead":null,
+    "date":"2026-02-23"
+  },
+  {
+    "dates":"20\u201323 Feb",
+    "pollster":"More in Common",
     "year":2026,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2015.0,
+    "labour":22.0,
+    "conservative":20.0,
+    "reform":28.0,
+    "liberal_democrats":14.0,
+    "green":11.0,
+    "snp":2.0,
+    "plaid_cymru":1.0,
+    "rb":"2",
+    "others":6.0,
+    "lead":null,
     "date":"2026-02-23"
   },
   {
     "dates":"25 Feb",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2442.0,
@@ -7216,12 +7217,12 @@
     "rb":"Did not exist",
     "others":7.0,
     "lead":8.0,
-    "year":2026,
     "date":"2026-02-25"
   },
   {
     "dates":"25\u201327 Feb",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -7235,12 +7236,12 @@
     "rb":"6",
     "others":12.0,
     "lead":null,
-    "year":2026,
     "date":"2026-02-27"
   },
   {
     "dates":"27 Feb\u20131 Mar",
     "pollster":"Convergent Opinion",
+    "year":2026,
     "client":"Persuasion UK",
     "area":"GB",
     "sample_size":4988.0,
@@ -7254,12 +7255,12 @@
     "rb":"7",
     "others":5.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-01"
   },
   {
     "dates":"27 Feb\u20131 Mar",
     "pollster":"Freshwater Strategy",
+    "year":2026,
     "client":"City AM",
     "area":"GB",
     "sample_size":1221.0,
@@ -7273,12 +7274,12 @@
     "rb":"3",
     "others":12.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-01"
   },
   {
     "dates":"27 Feb\u20132 Mar",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2010.0,
@@ -7292,12 +7293,12 @@
     "rb":"3",
     "others":10.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-02"
   },
   {
     "dates":"1\u20132 Mar",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2073.0,
@@ -7311,12 +7312,12 @@
     "rb":"5",
     "others":2.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-02"
   },
   {
     "dates":"2\u20135 Mar",
     "pollster":"JL Partners",
+    "year":2026,
     "client":"The Sun",
     "area":"GB",
     "sample_size":2573.0,
@@ -7330,12 +7331,12 @@
     "rb":"4",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-05"
   },
   {
     "dates":"4\u20135 Mar",
     "pollster":"BMG Research",
+    "year":2026,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1503.0,
@@ -7349,12 +7350,12 @@
     "rb":"6",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-05"
   },
   {
     "dates":"5 Mar",
     "pollster":"Survation",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1045.0,
@@ -7368,12 +7369,12 @@
     "rb":"5",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-05"
   },
   {
     "dates":"5\u20136 Mar",
     "pollster":"Convergent Opinion",
+    "year":2026,
     "client":"Meliore",
     "area":"GB",
     "sample_size":2189.0,
@@ -7387,12 +7388,12 @@
     "rb":"6",
     "others":5.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-06"
   },
   {
     "dates":"4\u20136 Mar",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2548.0,
@@ -7406,12 +7407,12 @@
     "rb":"6",
     "others":6.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-06"
   },
   {
     "dates":"4\u20136 Mar",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -7425,12 +7426,12 @@
     "rb":"5",
     "others":8.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-06"
   },
   {
     "dates":"6\u20139 Mar",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2112.0,
@@ -7444,31 +7445,12 @@
     "rb":"Did not exist",
     "others":3.0,
     "lead":8.0,
-    "year":2026,
     "date":"2026-03-09"
-  },
-  {
-    "dates":"6\u201310 Mar",
-    "pollster":"Focaldata",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":1086.0,
-    "labour":20.0,
-    "conservative":18.0,
-    "reform":27.0,
-    "liberal_democrats":14.0,
-    "green":13.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":"2",
-    "others":3.0,
-    "lead":7.0,
-    "year":2026,
-    "date":"2026-03-10"
   },
   {
     "dates":"9\u201310 Mar",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2246.0,
@@ -7482,31 +7464,31 @@
     "rb":"4",
     "others":4.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-10"
   },
   {
-    "dates":"3\u201311 Mar",
-    "pollster":"Trajectory Partnership",
+    "dates":"6\u201310 Mar",
+    "pollster":"Focaldata",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
-    "sample_size":1456.0,
-    "labour":27.0,
-    "conservative":19.0,
-    "reform":24.0,
-    "liberal_democrats":10.0,
-    "green":12.0,
-    "snp":4.0,
+    "sample_size":1086.0,
+    "labour":20.0,
+    "conservative":18.0,
+    "reform":27.0,
+    "liberal_democrats":14.0,
+    "green":13.0,
+    "snp":2.0,
     "plaid_cymru":1.0,
-    "rb":"3UKIP1YP0Other 2",
+    "rb":"2",
     "others":3.0,
-    "lead":null,
-    "year":2026,
-    "date":"2026-03-11"
+    "lead":7.0,
+    "date":"2026-03-10"
   },
   {
     "dates":"5\u201311 Mar",
     "pollster":"Ipsos",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1062.0,
@@ -7520,12 +7502,12 @@
     "rb":"4",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-11"
   },
   {
     "dates":"11 Mar",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2793.0,
@@ -7539,12 +7521,31 @@
     "rb":"7",
     "others":5.0,
     "lead":null,
+    "date":"2026-03-11"
+  },
+  {
+    "dates":"3\u201311 Mar",
+    "pollster":"Trajectory Partnership",
     "year":2026,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":1456.0,
+    "labour":27.0,
+    "conservative":19.0,
+    "reform":24.0,
+    "liberal_democrats":10.0,
+    "green":12.0,
+    "snp":4.0,
+    "plaid_cymru":1.0,
+    "rb":"3UKIP1YP0Other 2",
+    "others":3.0,
+    "lead":null,
     "date":"2026-03-11"
   },
   {
     "dates":"10\u201312 Mar",
     "pollster":"Techne",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1639.0,
@@ -7558,12 +7559,12 @@
     "rb":"4",
     "others":9.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-12"
   },
   {
     "dates":"13\u201316 Mar",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2402.0,
@@ -7577,12 +7578,12 @@
     "rb":"4",
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-16"
   },
   {
     "dates":"15\u201316 Mar",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2329.0,
@@ -7596,12 +7597,12 @@
     "rb":"4",
     "others":6.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-16"
   },
   {
     "dates":"18 Mar",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2549.0,
@@ -7615,12 +7616,12 @@
     "rb":"7",
     "others":6.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-18"
   },
   {
     "dates":"18\u201320 Mar",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -7634,12 +7635,12 @@
     "rb":"Did not exist",
     "others":5.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-03-20"
   },
   {
     "dates":"20\u201322 Mar",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2408.0,
@@ -7653,31 +7654,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-03-22"
-  },
-  {
-    "dates":"22\u201323 Mar",
-    "pollster":"YouGov",
-    "client":"The Times\/Sky News",
-    "area":"GB",
-    "sample_size":2435.0,
-    "labour":19.0,
-    "conservative":17.0,
-    "reform":23.0,
-    "liberal_democrats":13.0,
-    "green":18.0,
-    "snp":4.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":4.0,
-    "lead":4.0,
-    "year":2026,
-    "date":"2026-03-23"
   },
   {
     "dates":"20\u201323 Mar",
     "pollster":"Verian",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1236.0,
@@ -7691,12 +7673,31 @@
     "rb":null,
     "others":5.0,
     "lead":5.0,
+    "date":"2026-03-23"
+  },
+  {
+    "dates":"22\u201323 Mar",
+    "pollster":"YouGov",
     "year":2026,
+    "client":"The Times\/Sky News",
+    "area":"GB",
+    "sample_size":2435.0,
+    "labour":19.0,
+    "conservative":17.0,
+    "reform":23.0,
+    "liberal_democrats":13.0,
+    "green":18.0,
+    "snp":4.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":4.0,
+    "lead":4.0,
     "date":"2026-03-23"
   },
   {
     "dates":"25 Mar",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"Restore Britain",
     "area":"GB",
     "sample_size":2948.0,
@@ -7710,12 +7711,12 @@
     "rb":"8",
     "others":3.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-03-25"
   },
   {
     "dates":"25\u201326 Mar",
     "pollster":"BMG Research",
+    "year":2026,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1507.0,
@@ -7729,12 +7730,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-03-26"
   },
   {
     "dates":"26\u201327 Mar",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":3092.0,
@@ -7748,12 +7749,12 @@
     "rb":null,
     "others":7.0,
     "lead":4.0,
-    "year":2026,
     "date":"2026-03-27"
   },
   {
     "dates":"1\u201330 Mar",
     "pollster":"More in Common (MRP)",
+    "year":2026,
     "client":"The Times",
     "area":"GB",
     "sample_size":15482.0,
@@ -7767,12 +7768,12 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-03-30"
   },
   {
     "dates":"26\u201330 Mar",
     "pollster":"Lord Ashcroft Polls",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5447.0,
@@ -7786,12 +7787,12 @@
     "rb":null,
     "others":7.0,
     "lead":null,
-    "year":2026,
     "date":"2026-03-30"
   },
   {
     "dates":"28\u201330 Mar",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2003.0,
@@ -7805,12 +7806,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-03-30"
   },
   {
     "dates":"29\u201330 Mar",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2368.0,
@@ -7824,12 +7825,12 @@
     "rb":null,
     "others":5.0,
     "lead":4.0,
-    "year":2026,
     "date":"2026-03-30"
   },
   {
     "dates":"27 Mar\u20131 Apr",
     "pollster":"Good Growth Foundation",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2005.0,
@@ -7843,12 +7844,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-04-01"
   },
   {
     "dates":"1\u20132 Apr",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2330.0,
@@ -7862,12 +7863,12 @@
     "rb":null,
     "others":7.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-04-02"
   },
   {
     "dates":"27 Mar\u20137 Apr",
     "pollster":"Find Out Now\/Electoral Calculus(MRP)",
+    "year":2026,
     "client":"PLMR",
     "area":"GB",
     "sample_size":5599.0,
@@ -7881,12 +7882,12 @@
     "rb":null,
     "others":8.0,
     "lead":3.0,
-    "year":2026,
     "date":"2026-04-07"
   },
   {
     "dates":"2\u20137 Apr",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2009.0,
@@ -7900,12 +7901,12 @@
     "rb":null,
     "others":3.0,
     "lead":10.0,
-    "year":2026,
     "date":"2026-04-07"
   },
   {
     "dates":"6\u20137 Apr",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2320.0,
@@ -7919,12 +7920,12 @@
     "rb":"4",
     "others":3.0,
     "lead":5.0,
-    "year":2026,
     "date":"2026-04-07"
   },
   {
     "dates":"8 Apr",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2869.0,
@@ -7938,12 +7939,12 @@
     "rb":null,
     "others":7.0,
     "lead":5.0,
-    "year":2026,
     "date":"2026-04-08"
   },
   {
     "dates":"8\u20139 Apr",
     "pollster":"JL Partners",
+    "year":2026,
     "client":"The Spectator",
     "area":"GB",
     "sample_size":3506.0,
@@ -7957,12 +7958,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-04-09"
   },
   {
     "dates":"10\u201312 Apr",
     "pollster":"Freshwater Strategy",
+    "year":2026,
     "client":"City AM",
     "area":"GB",
     "sample_size":1250.0,
@@ -7976,12 +7977,12 @@
     "rb":null,
     "others":4.0,
     "lead":4.0,
-    "year":2026,
     "date":"2026-04-12"
   },
   {
     "dates":"10\u201313 Apr",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2011.0,
@@ -7995,12 +7996,12 @@
     "rb":null,
     "others":3.0,
     "lead":3.0,
-    "year":2026,
     "date":"2026-04-13"
   },
   {
     "dates":"12\u201313 Apr",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2367.0,
@@ -8014,12 +8015,12 @@
     "rb":"4",
     "others":2.0,
     "lead":5.0,
-    "year":2026,
     "date":"2026-04-13"
   },
   {
     "dates":"9\u201315 Apr",
     "pollster":"Ipsos",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1044.0,
@@ -8033,12 +8034,12 @@
     "rb":"3",
     "others":1.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-04-15"
   },
   {
     "dates":"15 Apr",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2032.0,
@@ -8052,12 +8053,12 @@
     "rb":null,
     "others":6.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-04-15"
   },
   {
     "dates":"7\u201316 Apr",
     "pollster":"Trajectory Partnership",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1457.0,
@@ -8071,12 +8072,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2026,
     "date":"2026-04-16"
   },
   {
     "dates":"15\u201316 Apr",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"Restore Britain",
     "area":"GB",
     "sample_size":2284.0,
@@ -8090,12 +8091,12 @@
     "rb":"9",
     "others":4.0,
     "lead":3.0,
-    "year":2026,
     "date":"2026-04-16"
   },
   {
     "dates":"15\u201317 Apr",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2014.0,
@@ -8109,12 +8110,12 @@
     "rb":null,
     "others":5.0,
     "lead":4.0,
-    "year":2026,
     "date":"2026-04-17"
   },
   {
     "dates":"17\u201320 Apr",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2235.0,
@@ -8128,12 +8129,12 @@
     "rb":null,
     "others":5.0,
     "lead":5.0,
-    "year":2026,
     "date":"2026-04-20"
   },
   {
     "dates":"19\u201320 Apr",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2472.0,
@@ -8147,12 +8148,12 @@
     "rb":"3",
     "others":2.0,
     "lead":10.0,
-    "year":2026,
     "date":"2026-04-20"
   },
   {
     "dates":"22\u201323 Apr",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2656.0,
@@ -8166,12 +8167,12 @@
     "rb":null,
     "others":7.0,
     "lead":4.0,
-    "year":2026,
     "date":"2026-04-23"
   },
   {
     "dates":"22\u201324 Apr",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -8185,12 +8186,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-04-24"
   },
   {
     "dates":"22\u201324 Apr",
     "pollster":"Techne",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1645.0,
@@ -8204,31 +8205,12 @@
     "rb":"3",
     "others":4.0,
     "lead":8.0,
-    "year":2026,
     "date":"2026-04-24"
-  },
-  {
-    "dates":"26\u201327 Apr",
-    "pollster":"YouGov",
-    "client":"N\/A",
-    "area":"GB",
-    "sample_size":2354.0,
-    "labour":18.0,
-    "conservative":19.0,
-    "reform":26.0,
-    "liberal_democrats":13.0,
-    "green":15.0,
-    "snp":2.0,
-    "plaid_cymru":1.0,
-    "rb":"3",
-    "others":3.0,
-    "lead":7.0,
-    "year":2026,
-    "date":"2026-04-27"
   },
   {
     "dates":"23\u201327 Apr",
     "pollster":"Lord Ashcroft Polls",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":5094.0,
@@ -8242,12 +8224,12 @@
     "rb":null,
     "others":6.0,
     "lead":1.0,
-    "year":2026,
     "date":"2026-04-27"
   },
   {
     "dates":"24\u201327 Apr",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2041.0,
@@ -8261,12 +8243,31 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
+    "date":"2026-04-27"
+  },
+  {
+    "dates":"26\u201327 Apr",
+    "pollster":"YouGov",
     "year":2026,
+    "client":"N\/A",
+    "area":"GB",
+    "sample_size":2354.0,
+    "labour":18.0,
+    "conservative":19.0,
+    "reform":26.0,
+    "liberal_democrats":13.0,
+    "green":15.0,
+    "snp":2.0,
+    "plaid_cymru":1.0,
+    "rb":"3",
+    "others":3.0,
+    "lead":7.0,
     "date":"2026-04-27"
   },
   {
     "dates":"29 Apr",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":3005.0,
@@ -8280,12 +8281,12 @@
     "rb":null,
     "others":7.0,
     "lead":4.0,
-    "year":2026,
     "date":"2026-04-29"
   },
   {
     "dates":"29\u201330 Apr",
     "pollster":"BMG Research",
+    "year":2026,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1521.0,
@@ -8299,31 +8300,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-04-30"
-  },
-  {
-    "dates":"26 Apr\u20131 May",
-    "pollster":"Deltapoll",
-    "client":"The Mirror",
-    "area":"GB",
-    "sample_size":3353.0,
-    "labour":21.0,
-    "conservative":19.0,
-    "reform":29.0,
-    "liberal_democrats":9.0,
-    "green":12.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":null,
-    "others":6.0,
-    "lead":8.0,
-    "year":2026,
-    "date":"2026-05-01"
   },
   {
     "dates":"29 Apr\u20131 May",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2051.0,
@@ -8337,12 +8319,31 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
+    "date":"2026-05-01"
+  },
+  {
+    "dates":"26 Apr\u20131 May",
+    "pollster":"Deltapoll",
     "year":2026,
+    "client":"The Mirror",
+    "area":"GB",
+    "sample_size":3353.0,
+    "labour":21.0,
+    "conservative":19.0,
+    "reform":29.0,
+    "liberal_democrats":9.0,
+    "green":12.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":null,
+    "others":6.0,
+    "lead":8.0,
     "date":"2026-05-01"
   },
   {
     "dates":"1\u20134 May",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2016.0,
@@ -8356,12 +8357,12 @@
     "rb":null,
     "others":5.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-05-04"
   },
   {
     "dates":"4\u20135 May",
     "pollster":"YouGov",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2377.0,
@@ -8375,12 +8376,12 @@
     "rb":"4",
     "others":2.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-05-05"
   },
   {
     "dates":"6 May",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2035.0,
@@ -8394,12 +8395,12 @@
     "rb":null,
     "others":5.0,
     "lead":5.0,
-    "year":2026,
     "date":"2026-05-06"
   },
   {
     "dates":"6\u20138 May",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -8413,12 +8414,12 @@
     "rb":null,
     "others":4.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-05-08"
   },
   {
     "dates":"9\u201310 May",
     "pollster":"Freshwater Strategy",
+    "year":2026,
     "client":"City AM",
     "area":"GB",
     "sample_size":1243.0,
@@ -8432,12 +8433,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-05-10"
   },
   {
     "dates":"10\u201311 May",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2338.0,
@@ -8451,12 +8452,12 @@
     "rb":"3",
     "others":2.0,
     "lead":11.0,
-    "year":2026,
     "date":"2026-05-11"
   },
   {
     "dates":"9\u201312 May",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":3070.0,
@@ -8470,12 +8471,12 @@
     "rb":null,
     "others":2.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-05-12"
   },
   {
     "dates":"13 May",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2922.0,
@@ -8489,12 +8490,12 @@
     "rb":null,
     "others":5.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-05-13"
   },
   {
     "dates":"5\u201314 May",
     "pollster":"Trajectory Partnership",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1459.0,
@@ -8508,12 +8509,12 @@
     "rb":null,
     "others":3.0,
     "lead":1.0,
-    "year":2026,
     "date":"2026-05-14"
   },
   {
     "dates":"13\u201315 May",
     "pollster":"Techne",
+    "year":2026,
     "client":"N\/A",
     "area":"UK",
     "sample_size":1639.0,
@@ -8527,12 +8528,12 @@
     "rb":"3",
     "others":3.0,
     "lead":12.0,
-    "year":2026,
     "date":"2026-05-15"
   },
   {
     "dates":"17\u201318 May",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2356.0,
@@ -8546,12 +8547,12 @@
     "rb":"4",
     "others":2.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-05-18"
   },
   {
     "dates":"15\u201318 May",
     "pollster":"Deltapoll",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1921.0,
@@ -8565,12 +8566,12 @@
     "rb":null,
     "others":6.0,
     "lead":8.0,
-    "year":2026,
     "date":"2026-05-18"
   },
   {
     "dates":"15\u201319 May",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2599.0,
@@ -8584,12 +8585,12 @@
     "rb":null,
     "others":3.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-05-19"
   },
   {
     "dates":"15\u201320 May",
     "pollster":"Ipsos",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1137.0,
@@ -8603,12 +8604,12 @@
     "rb":"2",
     "others":1.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-05-20"
   },
   {
     "dates":"14\u201321 May",
     "pollster":"JL Partners",
+    "year":2026,
     "client":"The Sun",
     "area":"GB",
     "sample_size":1741.0,
@@ -8622,12 +8623,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2026,
     "date":"2026-05-21"
   },
   {
     "dates":"20\u201321 May",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2773.0,
@@ -8641,12 +8642,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-05-21"
   },
   {
     "dates":"20\u201322 May",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":1500.0,
@@ -8660,12 +8661,12 @@
     "rb":null,
     "others":4.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-05-22"
   },
   {
     "dates":"22\u201325 May",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2111.0,
@@ -8679,12 +8680,12 @@
     "rb":null,
     "others":3.0,
     "lead":10.0,
-    "year":2026,
     "date":"2026-05-25"
   },
   {
     "dates":"21\u201326 May",
     "pollster":"Lord Ashcroft Polls",
+    "year":2026,
     "client":"Mail on Sunday",
     "area":"GB",
     "sample_size":5263.0,
@@ -8698,12 +8699,12 @@
     "rb":null,
     "others":6.0,
     "lead":null,
-    "year":2026,
     "date":"2026-05-26"
   },
   {
     "dates":"25\u201326 May",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2354.0,
@@ -8717,12 +8718,12 @@
     "rb":"3",
     "others":2.0,
     "lead":5.0,
-    "year":2026,
     "date":"2026-05-26"
   },
   {
     "dates":"27 May",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2111.0,
@@ -8736,12 +8737,12 @@
     "rb":null,
     "others":6.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-05-27"
   },
   {
     "dates":"26\u201328 May",
     "pollster":"BMG Research",
+    "year":2026,
     "client":"The i Paper",
     "area":"GB",
     "sample_size":1511.0,
@@ -8755,12 +8756,12 @@
     "rb":null,
     "others":5.0,
     "lead":8.0,
-    "year":2026,
     "date":"2026-05-28"
   },
   {
     "dates":"29\u201331 May",
     "pollster":"Freshwater Strategy",
+    "year":2026,
     "client":"City AM",
     "area":"GB",
     "sample_size":1237.0,
@@ -8774,31 +8775,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-05-31"
-  },
-  {
-    "dates":"31 May\u20131 Jun",
-    "pollster":"YouGov",
-    "client":"The Times\/Sky News",
-    "area":"GB",
-    "sample_size":2342.0,
-    "labour":18.0,
-    "conservative":18.0,
-    "reform":27.0,
-    "liberal_democrats":13.0,
-    "green":15.0,
-    "snp":3.0,
-    "plaid_cymru":1.0,
-    "rb":"3",
-    "others":1.0,
-    "lead":9.0,
-    "year":2026,
-    "date":"2026-06-01"
   },
   {
     "dates":"29 May\u20131 Jun",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2211.0,
@@ -8812,12 +8794,31 @@
     "rb":null,
     "others":2.0,
     "lead":7.0,
+    "date":"2026-06-01"
+  },
+  {
+    "dates":"31 May\u20131 Jun",
+    "pollster":"YouGov",
     "year":2026,
+    "client":"The Times\/Sky News",
+    "area":"GB",
+    "sample_size":2342.0,
+    "labour":18.0,
+    "conservative":18.0,
+    "reform":27.0,
+    "liberal_democrats":13.0,
+    "green":15.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":"3",
+    "others":1.0,
+    "lead":9.0,
     "date":"2026-06-01"
   },
   {
     "dates":"3\u20134 Jun",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2940.0,
@@ -8831,12 +8832,12 @@
     "rb":null,
     "others":7.0,
     "lead":10.0,
-    "year":2026,
     "date":"2026-06-04"
   },
   {
     "dates":"3\u20135 Jun",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -8850,12 +8851,12 @@
     "rb":null,
     "others":5.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-06-05"
   },
   {
     "dates":"31 May\u20137 Jun",
     "pollster":"Good Growth Foundation",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":4000.0,
@@ -8869,12 +8870,12 @@
     "rb":null,
     "others":5.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-06-07"
   },
   {
     "dates":"7\u20138 Jun",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2267.0,
@@ -8888,12 +8889,12 @@
     "rb":"3",
     "others":3.0,
     "lead":6.0,
-    "year":2026,
     "date":"2026-06-08"
   },
   {
     "dates":"5\u20139 Jun",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2087.0,
@@ -8907,12 +8908,12 @@
     "rb":null,
     "others":3.0,
     "lead":10.0,
-    "year":2026,
     "date":"2026-06-09"
   },
   {
     "dates":"10\u201311 Jun",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2113.0,
@@ -8926,12 +8927,12 @@
     "rb":null,
     "others":6.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-06-11"
   },
   {
     "dates":"11\u201315 Jun",
     "pollster":"Survation",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":1003.0,
@@ -8945,12 +8946,12 @@
     "rb":"2",
     "others":4.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-06-15"
   },
   {
     "dates":"12\u201315 Jun",
     "pollster":"Deltapoll",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2035.0,
@@ -8964,12 +8965,12 @@
     "rb":null,
     "others":4.0,
     "lead":8.0,
-    "year":2026,
     "date":"2026-06-15"
   },
   {
     "dates":"12\u201315 Jun",
     "pollster":"More in Common",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2097.0,
@@ -8983,12 +8984,12 @@
     "rb":null,
     "others":3.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-06-15"
   },
   {
     "dates":"14\u201315 Jun",
     "pollster":"YouGov",
+    "year":2026,
     "client":"The Times\/Sky News",
     "area":"GB",
     "sample_size":2308.0,
@@ -9002,12 +9003,12 @@
     "rb":"4",
     "others":2.0,
     "lead":5.0,
-    "year":2026,
     "date":"2026-06-15"
   },
   {
     "dates":"17\u201318 Jun",
     "pollster":"Find Out Now",
+    "year":2026,
     "client":"N\/A",
     "area":"GB",
     "sample_size":2113.0,
@@ -9021,12 +9022,31 @@
     "rb":null,
     "others":7.0,
     "lead":9.0,
-    "year":2026,
     "date":"2026-06-18"
+  },
+  {
+    "dates":"16\u201319 Jun",
+    "pollster":"JL Partners",
+    "year":2026,
+    "client":"The Sun",
+    "area":"GB",
+    "sample_size":1946.0,
+    "labour":21.0,
+    "conservative":21.0,
+    "reform":27.0,
+    "liberal_democrats":12.0,
+    "green":11.0,
+    "snp":null,
+    "plaid_cymru":null,
+    "rb":null,
+    "others":8.0,
+    "lead":6.0,
+    "date":"2026-06-19"
   },
   {
     "dates":"17\u201319 Jun",
     "pollster":"Opinium",
+    "year":2026,
     "client":"The Observer",
     "area":"GB",
     "sample_size":2050.0,
@@ -9040,7 +9060,6 @@
     "rb":null,
     "others":5.0,
     "lead":7.0,
-    "year":2026,
     "date":"2026-06-19"
   }
 ]
