@@ -9823,7 +9823,7 @@
     "date":"2026-07-31"
   },
   {
-    "dates":"29 Jul\u20132 Aug",
+    "dates":"31 Jul\u20132 Aug",
     "pollster":"More in Common",
     "client":"N\/A",
     "area":"GB",
@@ -9909,10 +9909,10 @@
     "reform":25.0,
     "liberal_democrats":9.0,
     "green":12.0,
-    "snp":null,
-    "plaid_cymru":null,
-    "rb":"TBA",
-    "others":8.0,
+    "snp":3.0,
+    "plaid_cymru":1.0,
+    "rb":"4",
+    "others":1.0,
     "lead":3.0,
     "year":2026,
     "date":"2026-08-04"
